@@ -1,0 +1,33 @@
+.container-greet {
+    background-color: #38c215;
+    height: 130px;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    line-height: 1em;
+    margin: 15px;
+}
+
+.content-greet {
+    margin-left: 25px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+span {
+    font-weight: 400;
+}
+
+h1 {
+    margin: 0;
+    font-size: 45px;
+    line-height: 1em;
+}
+
+p {
+    margin: 0;
+    font-size: 25px;
+}
