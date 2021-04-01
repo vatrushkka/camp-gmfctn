@@ -1,0 +1,40 @@
+.badges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+        font-size: 20px;
+    }
+}
+
+#badg-numb {
+    font-size: 90px;
+    font-weight: 500;
+    color: #38c215;
+    line-height: 1em;
+    margin: 0;
+}
+
+.badg-down {
+    display: flex;
+    justify-content: space-between;
+}
+
+.badg-cont {
+    display: flex;
+    align-items: center;
+
+    p {
+        font-size: 13px;
+    }
+}
+
+.green-dot {
+    background-color: #38c215;
+    width: 5px;
+    height: 5px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
