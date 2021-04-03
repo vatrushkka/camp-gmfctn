@@ -19,24 +19,23 @@
 
 .badg-down {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .badg-cont {
     display: flex;
     align-items: center;
-    justify-content: space-around;
 
     p {
-        font-size: 13px;
+        font-size: 14px;
         margin: 0;
     }
-}
 
-.green-dot {
-    background-color: #38c215;
-    width: 5px;
-    height: 5px;
-    margin-left: 10px;
-    border-radius: 50%;
+    .green-dot {
+        background-color: #38c215;
+        width: 5px;
+        height: 5px;
+        margin-left: 10px;
+        border-radius: 50%;
+    }
 }

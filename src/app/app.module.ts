@@ -8,19 +8,23 @@ import { MaterialModule } from './shared/material/material/material.module';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { BadgesComponent } from './modules/badges/badges.component';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { NavigationComponent } from './shared/navigation/navigation.component';
+import { NavigationModule } from './shared/navigation/navigation.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    BadgesComponent
+    BadgesComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    DashboardModule
+    DashboardModule,
+    NavigationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
