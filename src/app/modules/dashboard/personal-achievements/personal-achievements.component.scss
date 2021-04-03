@@ -1,4 +1,10 @@
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    height: 90%;
+    margin: 20px;
 
     .header {
         display: flex;
@@ -33,9 +39,13 @@
         }
 
         .achievment-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
 
             p {
-                line-height: 0.5em;
+                line-height: 1.5em;
+                margin-bottom: 0;
                 margin-left: 15px;
             }
         }
@@ -55,7 +65,7 @@
 
         p {
             color: #f5c918;
-            font-size: 15px;
+            margin-bottom: 0;
         }
     }
 }
