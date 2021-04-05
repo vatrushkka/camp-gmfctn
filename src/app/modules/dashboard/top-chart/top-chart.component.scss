@@ -7,6 +7,7 @@
         width: 40%;
         justify-content: space-between;
         border-bottom: 1px solid #38c215;
+        margin-bottom: 10px;
         
         p {
             margin: 0;
@@ -21,7 +22,8 @@
         height: 90%;
 
         .top-user {
-            background-color: crimson;
+            display: flex;
+            align-items: center;
             margin-right: 5px;
             display: flex;
 
@@ -29,9 +31,9 @@
             .user {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 width: 40%;
                 margin-right: 10px;
-                background-color: chocolate;
         
                 .icon-name-user {
                     display: flex;

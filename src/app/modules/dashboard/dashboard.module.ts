@@ -9,6 +9,7 @@ import { GreetingComponent } from './greeting/greeting.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { TopChartComponent } from './top-chart/top-chart.component';
 import { ExoftAchievementsComponent } from './exoft-achievements/exoft-achievements.component';
+import { MaterialModule } from 'src/app/shared/material/material/material.module';
 
 
 
@@ -23,7 +24,8 @@ import { ExoftAchievementsComponent } from './exoft-achievements/exoft-achieveme
     ExoftAchievementsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule
   ],
   exports: [
     BadgesComponent, 
