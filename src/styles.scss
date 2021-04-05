@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-
-@import './assets/styles/dashboard-styles.scss';
+@import './styles/colors.scss';
+@import './styles/dashboard-styles.scss';
 @import './app/shared/material/material-overwrite/material-overwrite.scss';
 
 html, body { 

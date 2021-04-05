@@ -1,3 +1,5 @@
+@import '../../../../styles/colors.scss';
+
 .badges {
     display: flex;
     flex-direction: column;
@@ -12,7 +14,7 @@
 #badg-numb {
     font-size: 90px;
     font-weight: 500;
-    color: #38c215;
+    color: $green;
     line-height: 1em;
     margin: 0;
 }
@@ -32,7 +34,7 @@
     }
 
     .green-dot {
-        background-color: #38c215;
+        background-color: $green;
         width: 5px;
         height: 5px;
         margin-left: 10px;

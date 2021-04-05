@@ -1,14 +1,16 @@
+@import '../../../styles/colors.scss';
+
 mat-grid-list {
     margin: 10px;
 }
 
 mat-grid-tile {
-    background-color: #343b42;
+    background-color: $grey;
     border-radius: 5px;
 }
 
 .greeting {
-    background-color: #38c215;
+    background-color: $green;
 }
 
 .w-h-100 {

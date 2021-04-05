@@ -1,0 +1,118 @@
+@import '../../../../styles/colors.scss';
+
+
+.ach {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95%;
+    font-size: 16px;
+    margin: 20px;
+
+    .h-ach {
+        display: flex;
+        align-items: flex-start;
+        font-weight: 600;
+        margin-bottom: 20px;
+
+        p {
+            margin: 0;
+            margin-right: 15px;
+        }
+
+        button {
+            padding: 0px 10px;
+            background-color: $green;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+
+    .top {
+        overflow-y: scroll;
+        width: 100%;
+
+        .ach-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 95%;
+
+            .img-name-time {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                .img-name {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: 2px solid $green;
+                    }
+        
+                    .name {
+                        color: $green;
+                        margin-left: 10px;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                }
+
+                .time {
+                    margin-right: 10px;
+                    font-size: 15px;
+                }
+            }
+
+            .line {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: flex-start;
+                height: 60px;
+                border-left: 2px solid $light-grey;
+                width: 86%;
+                padding-bottom: 20px;
+
+                p {
+                    font-size: 15px;
+                    margin: 0;
+                    margin-left: 20px;
+                }
+
+                button {
+                    margin-left: 20px;
+                    padding: 5px 20px;
+                    background-color: #1ddbdb;
+                    border: none;
+                    border-radius: 20px;
+                    color: #fff;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+  .top::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: $dark-grey;
+    border-radius: 5px;
+  }
+  
+  .top::-webkit-scrollbar-thumb {
+    background: $green;
+    border-radius: 15px;
+  }
