@@ -6,12 +6,89 @@
 }
 
 .ch {
-    background-color: darkslategray;
     overflow-y: scroll;
     width: 100%;
     height: 100%;
-}
 
+    .ach {
+        position: relative;
+        padding-left: 4px;
+
+        .green-dot {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: $green;
+            border-radius: 50%;
+            left: 0;
+        }
+
+        .line {
+            border-left: 2px solid $light-grey;
+            padding-left: 30px;
+    
+            p {
+                color: $green;
+            }
+    
+            .available-content {
+                display: flex;
+                align-items: center;
+                padding-bottom: 20px;
+
+
+                img {
+                    width: 200px;
+                }
+        
+                .name {
+                    color: #fff;
+                    margin: 0 20px;
+                }
+        
+                .complete-rem {
+
+                    .green {
+                        color: $green;
+                    }
+        
+                    p {
+                        color: #fff;
+                        margin: 10px 0;
+                    }
+                }
+            }
+
+            .end-row {
+                display: flex;
+
+                .ended-content {
+
+                    .end {
+                        position: relative;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+                        width: 150px;
+                        height: 100px;
+                        margin: 10px;
+
+                        .name {
+                            color: #fff;
+                            font-weight: 500;
+                            z-index: 2;
+                        }
+
+                        img {
+                            width: 150px;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 .ch::-webkit-scrollbar {

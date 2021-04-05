@@ -9,17 +9,38 @@ export class ChallengesComponent implements OnInit {
 
   available = [
     {chName:'10 cats', 
-    img:'../assets/img/dashboard-img/badge.png',
+    img:'../assets/img/dashboard-img/cat-meme.jpg',
     progress: '70',
-    all: '10',
+    total: '10 cats',
+    remTime: '22.30.00'
+  },
+  {chName:'10 cats', 
+    img:'../assets/img/dashboard-img/cat-meme.jpg',
+    progress: '70',
+    total: '10 cats',
     remTime: '22.30.00'
   }
     
   ];
 
   ended = [
-    {img:'',
-    chName:'5k Swim'
+    {img:'../assets/img/dashboard-img/catt.jpg',
+    chName:'37 Cats'
+  },
+  {img:'../assets/img/dashboard-img/catt.jpg',
+    chName:'37 Cats'
+  },
+  {img:'../assets/img/dashboard-img/catt.jpg',
+    chName:'37 Cats'
+  },
+  {img:'../assets/img/dashboard-img/catt.jpg',
+    chName:'37 Cats'
+  },
+  {img:'../assets/img/dashboard-img/catt.jpg',
+    chName:'37 Cats'
+  },
+  {img:'../assets/img/dashboard-img/catt.jpg',
+    chName:'37 Cats'
   }
   ]
 
