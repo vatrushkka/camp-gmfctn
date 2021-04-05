@@ -10,13 +10,15 @@ import { BadgesComponent } from './modules/badges/badges.component';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { NavigationComponent } from './shared/navigation/navigation.component';
 import { NavigationModule } from './shared/navigation/navigation.module';
+import { SidebarComponent } from './modules/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     BadgesComponent,
-    NavigationComponent
+    NavigationComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

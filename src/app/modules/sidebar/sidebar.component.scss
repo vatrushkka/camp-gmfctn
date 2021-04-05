@@ -1,0 +1,18 @@
+.sidebar {
+    width: 20%;
+    height: 100%;
+    color: #fff;
+    background-color: darkcyan;
+
+    .sidebar-content {
+        margin: 20px;
+        background-color: darkred;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+    }
+}

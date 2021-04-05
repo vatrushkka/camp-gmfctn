@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChallengesComponent implements OnInit {
 
+  challenges = [
+    {chName:'bv', img:[]},
+    {chName:'fghjk', img:[]},
+    {chName:'hgf', img:[]},
+    {chName:'jjhg', img:[]}
+  ];
+
+
   constructor() { }
 
   ngOnInit(): void {
