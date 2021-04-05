@@ -13,10 +13,10 @@ export class PersonalAchievementsComponent implements OnInit {
   }
 
   achievments = [
-    {img: '../assets/dashboard-img/badge.png', title: 'Exoft Turbo Power', xp: 15, time: 3},
-    {img: '../assets/dashboard-img/badge.png', title: 'Exoft Turbo Power', xp: 10, time: 3},
-    {img: '../assets/dashboard-img/badge.png', title: 'Exoft Turbo Power', xp: 20, time: 7},
-    {img: '../assets/dashboard-img/badge.png', title: 'Exoft Turbo Power', xp: 15, time: 15}
+    {img: '../assets/img/dashboard-img/badge.png', title: 'Exoft Turbo Power', xp: 15, time: 3},
+    {img: '../assets/img/dashboard-img/badge.png', title: 'Exoft Turbo Power', xp: 10, time: 3},
+    {img: '../assets/img/dashboard-img/badge.png', title: 'Exoft Turbo Power', xp: 20, time: 7},
+    {img: '../assets/img/dashboard-img/badge.png', title: 'Exoft Turbo Power', xp: 15, time: 15}
   ]
 
 }

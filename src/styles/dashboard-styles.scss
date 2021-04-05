@@ -11,5 +11,14 @@
         align-items: center;
         justify-content: space-between;
         font-weight: 600;
+
+        button {
+            padding: 5px 15px;
+            background-color: #38c215;
+            border: none;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+        } 
     }
 }
