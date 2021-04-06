@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MaterialModule } from 'src/app/shared/material/material/material.module';
+import { RouterModule } from '@angular/router';
+
 
 
 import { BadgesComponent } from './badges/badges.component';
@@ -9,7 +12,7 @@ import { GreetingComponent } from './greeting/greeting.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { TopChartComponent } from './top-chart/top-chart.component';
 import { ExoftAchievementsComponent } from './exoft-achievements/exoft-achievements.component';
-import { MaterialModule } from 'src/app/shared/material/material/material.module';
+import { HeaderRoutingModule } from 'src/app/shared/header/header-routing.module';
 
 
 
@@ -25,7 +28,9 @@ import { MaterialModule } from 'src/app/shared/material/material/material.module
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    HeaderRoutingModule
+
   ],
   exports: [
     BadgesComponent, 
@@ -38,3 +43,4 @@ import { MaterialModule } from 'src/app/shared/material/material/material.module
   ]
 })
 export class DashboardModule { }
+

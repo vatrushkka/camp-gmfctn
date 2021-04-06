@@ -1,0 +1,35 @@
+
+<mat-sidenav-container>
+    <mat-sidenav [(opened)]="opened">
+        
+        <div class="sidenav-header">
+            <p>GMFCTN!</p>
+
+            <button mat-icon-button aria-label="Example icon-button with menu icon" (click)="opened=!opened">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+          
+        <app-sidebar></app-sidebar>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+            <div class="sidebar">
+
+              <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="opened=!opened">
+                <mat-icon>menu</mat-icon>
+              </button>
+
+              <p>GMFCTN</p>
+            </div>
+
+            <div class="nav">
+                <app-navigation></app-navigation>
+            </div>
+
+            <div class="user">
+                <app-user></app-user>
+            </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
