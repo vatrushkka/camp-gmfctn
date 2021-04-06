@@ -1,13 +1,14 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
   {
     path: 'dashboard',
-    loadChildren: () => 
-    import('./modules/dashboard/dashboard.module')
-    .then(module => module.DashboardModule)
-
+    loadChildren: () => import('./+dashboard/dashboard.module').then(module => module.DashboardModule)
+  },
+  {
+    path: 'badges',
+    loadChildren: () => import('./+badges/badges.module').then(module => module.BadgesModule)
   }
 ];
 
@@ -15,4 +16,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

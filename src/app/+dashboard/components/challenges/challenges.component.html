@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="header">
+    <p>CHALLENGES</p>
+    <button>Show more</button>
+  </div>
+
+  <div class="ch">
+    <div class="ach">
+      <div class="green-dot"></div>
+
+      <div class="line">
+        <p>Available</p>
+
+        <div *ngFor='let item of available' class="available-content">
+          <img alt="" src="{{ item.img }}">
+
+          <p class="name">{{ item.chName }}</p>
+
+          <div class="complete-rem">
+            <p class="green">{{ item.progress }}% of {{ item.total }} complete</p>
+            <p>{{ item.remTime }} Remaining</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ach">
+      <div class="green-dot"></div>
+
+      <div class="line">
+        <p>Ended</p>
+
+        <div class="end-row">
+          <div *ngFor='let item of ended' class="ended-content">
+            <div class="end">
+              <p class="name">{{ item.chName }}</p>
+              <img alt="" src="{{ item.img }}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
