@@ -11,7 +11,7 @@ import { GreetingComponent } from './components/greeting/greeting.component';
 import { ThankYouComponent } from './components/thank-you/thank-you.component';
 import { TopChartComponent } from './components/top-chart/top-chart.component';
 import { ExoftAchievementsComponent } from './components/exoft-achievements/exoft-achievements.component';
-import {DashboardComponent} from './dashboard.component';
+import { DashboardComponent } from './dashboard.component';
 
 @NgModule({
   declarations: [

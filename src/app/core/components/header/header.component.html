@@ -1,35 +1,43 @@
 
 <mat-sidenav-container>
-    <mat-sidenav [(opened)]="opened">
+    <mat-sidenav class="layout" [(opened)]="opened">
         
         <div class="sidenav-header">
             <p>GMFCTN!</p>
 
-            <button mat-icon-button aria-label="Example icon-button with menu icon" (click)="opened=!opened">
+            <button class="example-icon" mat-icon-button aria-label="Example icon-button with menu icon" (click)="opened=!opened">
                 <mat-icon>menu</mat-icon>
             </button>
         </div>
           
-        <app-sidebar></app-sidebar>
 
     </mat-sidenav>
 
     <mat-sidenav-content>
+        <mat-toolbar>
             <div class="sidebar">
 
-              <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="opened=!opened">
-                <mat-icon>menu</mat-icon>
-              </button>
-
-              <p>GMFCTN</p>
-            </div>
-
-            <div class="nav">
-                <app-navigation></app-navigation>
-            </div>
-
-            <div class="user">
-                <app-user></app-user>
-            </div>
+                <a mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="opened=!opened">
+                  <mat-icon>menu</mat-icon>
+                </a>
+  
+                <p>GMFCTN</p>
+              </div>
+  
+              <div class="nav" >
+                  <a mat-raised-button routerLink="dashboard" routerLinkActive="router-link-active">
+                      Dashboard
+                  </a>
+  
+                  <a mat-raised-button routerLink="badges" routerLinkActive="router-link-active">
+                      Badges
+                  </a>
+              </div>
+  
+              <div class="user">
+                  user
+              </div>
+        </mat-toolbar>
+        <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>

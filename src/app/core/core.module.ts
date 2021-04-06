@@ -3,10 +3,12 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {BrowserModule} from '@angular/platform-browser';
 import {MaterialModule} from './modules/material.module';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from '../app-routing.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 // components
 import {HeaderComponent} from './components/header/header.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -14,13 +16,21 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HeaderComponent
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    CommonModule,
+    BrowserModule,
+    MaterialModule,
+    BrowserAnimationsModule,
+    RouterModule,
+    AppRoutingModule
   ],
   imports: [
     CommonModule,
     BrowserModule,
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule,
+    AppRoutingModule
   ]
 })
 export class CoreModule {
