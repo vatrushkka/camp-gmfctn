@@ -35,9 +35,5 @@ export const endedChallenges = [
   {
     img: '../assets/img/dashboard-img/catt.jpg',
     chName: '37 Cats'
-  },
-  {
-    img: '../assets/img/dashboard-img/catt.jpg',
-    chName: '37 Cats'
   }
 ];

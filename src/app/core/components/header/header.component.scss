@@ -10,13 +10,14 @@
         width: 20%;
     }
 
-    .router-link-active {
-        background: $green;
+    .router-link {
+        background-color: blanchedalmond;
+        color: blue;
     }
 
     .mat-toolbar{ 
         color: white;
-        height: 90px;
+        height: 80px;
         background-color: $grey;
         display: flex;
         justify-content: space-between;
@@ -25,11 +26,49 @@
         .sidebar {
             display: flex;
             align-items: center;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .nav {
+
+            .router-link-active {
+                color: $green;
+                border-top: 3px solid $green;
+
+                &:hover {
+                    background-color: $green;
+                    color: $white;
+                    border-top: 3px solid $white;
+                }
+            }
+
+            button {
+                border: none;
+                margin: 10px;
+                padding: 20px 10px;
+                color: $white;
+                font-size: 20px;
+                background-color: $grey;
+                outline: none;
+
+                &:hover {
+                    background-color: $green;
+                    color: $white;
+                }
+            }
     
             p {
                 margin: 0;
                 color: $white;
             }
         }
+           
+        // .user {
+
+        // }
+        
     }    
 }
