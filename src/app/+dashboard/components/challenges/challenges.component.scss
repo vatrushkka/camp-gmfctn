@@ -90,14 +90,14 @@
   }
 }
 
-.ch::-webkit-scrollbar {
+.achievements::-webkit-scrollbar {
   width: 5px;
   height: 8px;
   background-color: $dark-grey;
   border-radius: 5px;
 }
 
-.ch::-webkit-scrollbar-thumb {
+.achievements::-webkit-scrollbar-thumb {
   background: $green;
   border-radius: 15px;
 }
