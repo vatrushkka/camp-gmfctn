@@ -10,11 +10,6 @@
         width: 20%;
     }
 
-    .router-link {
-        background-color: blanchedalmond;
-        color: blue;
-    }
-
     .mat-toolbar{ 
         color: white;
         height: 80px;
@@ -32,7 +27,7 @@
             }
         }
 
-        .nav {
+        .navigation {
 
             .router-link-active {
                 color: $green;
@@ -65,10 +60,5 @@
                 color: $white;
             }
         }
-           
-        // .user {
-
-        // }
-        
     }    
 }
