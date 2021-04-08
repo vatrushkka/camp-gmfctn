@@ -10,7 +10,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // components
 import {HeaderComponent} from './components/header/header.component';
 
-
 @NgModule({
   declarations: [
     HeaderComponent
