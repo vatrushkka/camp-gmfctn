@@ -5,7 +5,7 @@ import {Component} from '@angular/core';
   templateUrl: './greeting.component.html',
   styleUrls: ['./greeting.component.scss']
 })
-export class GreetingComponent {
+export class GreetingComponent {  
   dayTime(): string {
     const hour = new Date().getHours();
 
