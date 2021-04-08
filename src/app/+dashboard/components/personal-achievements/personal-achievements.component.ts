@@ -6,7 +6,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./personal-achievements.component.scss']
 })
 export class PersonalAchievementsComponent {
-  achievments = [
+  achievements = [
     {img: '../assets/img/dashboard-img/badge.png', title: 'Exoft Turbo Power', xp: 15, time: 3},
     {img: '../assets/img/dashboard-img/badge.png', title: 'Exoft Turbo Power', xp: 10, time: 3},
     {img: '../assets/img/dashboard-img/badge.png', title: 'Exoft Turbo Power', xp: 20, time: 7},

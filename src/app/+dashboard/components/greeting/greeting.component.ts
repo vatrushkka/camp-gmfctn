@@ -6,6 +6,9 @@ import {Component} from '@angular/core';
   styleUrls: ['./greeting.component.scss']
 })
 export class GreetingComponent {  
+
+  public greeting = this.dayTime();
+
   dayTime(): string {
     const hour = new Date().getHours();
 

@@ -4,19 +4,19 @@
     <button>Request</button>
   </div>
 
-  <div *ngFor="let achievment of achievments" class="achievments">
-    <div class="achievment">
-      <img alt="" src="{{ achievment.img }}">
+  <div *ngFor="let achievement of achievements" class="achievement">
+    <div class="achievement">
+      <img alt="" src="{{ achievement.img }}">
 
-      <div class="achievment-text">
-        <p class="achievment-title">{{ achievment.title }}</p>
-        <p class="achievment-time">{{ achievment.time }} mins ago</p>
+      <div class="achievement-text">
+        <p class="achievement-title">{{ achievement.title }}</p>
+        <p class="achievement-time">{{ achievement.time }} mins ago</p>
       </div>
     </div>
 
     <div class="xp">
       <div class="coin"></div>
-      <p> + {{ achievment.xp }} xp</p>
+      <p> + {{ achievement.xp }} xp</p>
     </div>
   </div>
 </div>
