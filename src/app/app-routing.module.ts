@@ -5,17 +5,22 @@ import { DashboardComponent } from './+dashboard/dashboard.component';
 const routes: Routes = [
   {
     path: 'dashboard', 
-    component: DashboardComponent,
     loadChildren: () => import('./+dashboard/dashboard.module').then(module => module.DashboardModule)
   },
   {
     path: 'badges',
     loadChildren: () => import('./+badges/badges.module').then(module => module.BadgesModule)
+  },
+  { 
+    path: '', 
+    redirectTo: 'dashboard', 
+    pathMatch: 'full' 
   }
+  
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {

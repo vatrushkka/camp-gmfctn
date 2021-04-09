@@ -2,6 +2,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from 'src/app/core/modules/material.module';
+import { DashboardRoutingModule } from './dashboard-routing.module';
 
 // components
 import { BadgesComponent } from './components/badges/badges.component';
@@ -26,8 +27,8 @@ import { DashboardComponent } from './dashboard.component';
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    DashboardRoutingModule
   ]
 })
 export class DashboardModule { }
-

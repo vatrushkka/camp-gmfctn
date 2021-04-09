@@ -6,6 +6,7 @@ import {MaterialModule} from './modules/material.module';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from '../app-routing.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { PipesModule } from './pipes/pipes.module';
 
 // components
 import {HeaderComponent} from './components/header/header.component';
@@ -14,6 +15,15 @@ import {HeaderComponent} from './components/header/header.component';
   declarations: [
     HeaderComponent
   ],
+  imports: [
+    CommonModule,
+    BrowserModule,
+    MaterialModule,
+    BrowserAnimationsModule,
+    RouterModule,
+    AppRoutingModule,
+    PipesModule
+  ],
   exports: [
     HeaderComponent,
     CommonModule,
@@ -21,15 +31,8 @@ import {HeaderComponent} from './components/header/header.component';
     MaterialModule,
     BrowserAnimationsModule,
     RouterModule,
-    AppRoutingModule
-  ],
-  imports: [
-    CommonModule,
-    BrowserModule,
-    MaterialModule,
-    BrowserAnimationsModule,
-    RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PipesModule
   ]
 })
 export class CoreModule {
