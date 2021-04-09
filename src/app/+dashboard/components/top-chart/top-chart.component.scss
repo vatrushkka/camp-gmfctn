@@ -1,4 +1,4 @@
-@import '../../../core/styles/colors.scss';
+@import "../../../core/styles/colors.scss";
 
 .top {
     height: 90%;
@@ -9,13 +9,13 @@
         justify-content: space-between;
         border-bottom: 1px solid $green;
         margin-bottom: 10px;
-        
+
         p {
             margin: 0;
             color: $green;
         }
     }
-    
+
     .top-users {
         display: flex;
         flex-direction: column;
@@ -28,14 +28,13 @@
             margin-right: 5px;
             display: flex;
 
-
             .user {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 width: 40%;
                 margin-right: 10px;
-        
+
                 .icon-name-user {
                     display: flex;
 
@@ -46,17 +45,15 @@
                         border: 2px solid $green;
                         margin-right: 10px;
                     }
-            
+
                     .user-name {
-            
-            
                         p {
                             margin: 0;
                             font-size: 14px;
                         }
                     }
                 }
-
+            
                 .xp {
                     margin: 0;
                     font-size: 14px;
@@ -64,10 +61,14 @@
                     width: 50px;
                 }
             }
-        
+
             .user-top {
                 width: 60%;
                 height: 30px;
+
+                .top-line {
+                    height: 100%;
+                }
             }
         }
     }

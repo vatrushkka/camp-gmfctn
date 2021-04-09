@@ -23,9 +23,12 @@
                     <p class="xp text-uppercase">{{ user.xp }}xp</p>
                 </div>
     
-                <div class="user-top" 
-                [style.background-color]="user.color"
-                ></div>
+                <div class="user-top">
+                    <div class="top-line" 
+                        [style.background-color]="user.color"
+                        [ngStyle]="{'width': user.lengthXP+'%', 'background-color':user.color}"
+                    ></div>
+                </div>
             </div>
         </div>
     </div>
