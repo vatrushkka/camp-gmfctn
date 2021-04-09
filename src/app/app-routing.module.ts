@@ -10,11 +10,6 @@ const routes: Routes = [
   {
     path: 'badges',
     loadChildren: () => import('./+badges/badges.module').then(module => module.BadgesModule)
-  },
-  { 
-    path: '', 
-    redirectTo: 'dashboard', 
-    pathMatch: 'full' 
   }
   
 ];
