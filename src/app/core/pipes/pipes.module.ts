@@ -1,17 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-import { PersonalAchievementsDatePipe } from './personal-achievements-date.pipe';
+// import { PersonalAchievementsDatePipe } from './personal-achievements-date.pipe';
 
 @NgModule({
   declarations: [
-    PersonalAchievementsDatePipe
+    // PersonalAchievementsDatePipe
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    PersonalAchievementsDatePipe
+    // PersonalAchievementsDatePipe
   ]
 })
 export class PipesModule { }

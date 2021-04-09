@@ -13,6 +13,7 @@ import { ThankYouComponent } from './components/thank-you/thank-you.component';
 import { TopChartComponent } from './components/top-chart/top-chart.component';
 import { ExoftAchievementsComponent } from './components/exoft-achievements/exoft-achievements.component';
 import { DashboardComponent } from './dashboard.component';
+import { PersonalAchievementsDatePipe } from '../core/pipes/personal-achievements-date.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DashboardComponent } from './dashboard.component';
     ThankYouComponent,
     TopChartComponent,
     ExoftAchievementsComponent,
-    DashboardComponent
+    DashboardComponent,
+    PersonalAchievementsDatePipe
   ],
   imports: [
     CommonModule,

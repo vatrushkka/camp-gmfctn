@@ -4,6 +4,11 @@ import { DashboardComponent } from './+dashboard/dashboard.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full'
+  },
+  {
     path: 'dashboard', 
     loadChildren: () => import('./+dashboard/dashboard.module').then(module => module.DashboardModule)
   },
@@ -11,7 +16,6 @@ const routes: Routes = [
     path: 'badges',
     loadChildren: () => import('./+badges/badges.module').then(module => module.BadgesModule)
   }
-  
 ];
 
 @NgModule({
