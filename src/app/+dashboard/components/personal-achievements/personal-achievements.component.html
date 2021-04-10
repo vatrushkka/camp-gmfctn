@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="header">
+    <p class="text-uppercase">personal achievements</p>
+    <button>Request</button>
+  </div>
+
+  <div *ngFor="let achievement of achievements" class="achievement">
+    <div class="achievement">
+      <img alt="" src="{{ achievement.img }}">
+
+      <div class="achievement-text">
+        <p class="achievement-title">{{ achievement.title }}</p>
+        <p class="achievement-time">{{ achievement.time | personalAchievementsDate}}</p>
+      </div>
+    </div>
+
+    <div class="xp">
+      <div class="coin"></div>
+      <p> + {{ achievement.xp }} xp</p>
+    </div>
+  </div>
+</div>

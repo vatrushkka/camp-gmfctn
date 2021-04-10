@@ -1,0 +1,102 @@
+@import '../../../core/styles/colors';
+
+.header {
+  margin-bottom: 20px;
+}
+
+.achievements {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+
+  .achievement {
+    position: relative;
+    padding-left: 4px;
+    width: 96%;
+
+    .green-dot {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: $green;
+      border-radius: 50%;
+      left: 0;
+    }
+
+    .line {
+      border-left: 2px solid $light-grey;
+      padding-left: 30px;
+
+      p {
+        color: $green;
+      }
+
+      .available-content {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+
+        img {
+          width: 200px;
+        }
+
+        .name {
+          color: $white;
+          margin: 0 20px;
+        }
+
+        .complete-remaining {
+
+          .green {
+            color: $green;
+          }
+
+          p {
+            color: $white;
+            margin: 10px 0;
+          }
+        }
+      }
+
+      .end-row {
+        display: flex;
+
+        .ended-content {
+
+          .end {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+
+            .name {
+              color: $white;
+              font-weight: 500;
+              z-index: 2;
+            }
+
+            img {
+              width: 150px;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.achievements::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: $dark-grey;
+  border-radius: 5px;
+}
+
+.achievements::-webkit-scrollbar-thumb {
+  background: $green;
+  border-radius: 15px;
+}

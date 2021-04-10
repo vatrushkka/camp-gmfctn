@@ -1,0 +1,24 @@
+<div class="achievements">
+  <div class="header-achievements">
+    <p class="text-uppercase">exoft achievements</p>
+    <button>80</button>
+  </div>
+
+  <div class="top">
+    <div *ngFor='let achievement of achievements' class="achievement-content">
+      <div class="img-name-time">
+        <div class="img-name">
+          <img alt="" src="{{ achievement.img }}">
+          <p class="name">{{ achievement.firstName }} {{achievement.lastName}}</p>
+        </div>
+
+        <p class="time">{{ achievement.time }} mins ago</p>
+      </div>
+
+      <div class="line">
+        <p>Got achievement {{ achievement.achName }}</p>
+        <button>Records</button>
+      </div>
+    </div>
+  </div>
+</div>

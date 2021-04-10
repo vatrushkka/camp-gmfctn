@@ -1,4 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'app/core/styles/colors';
+@import 'app/+dashboard/styles/dashboard-styles';
+@import 'app/core/styles/material-overwrite';
+@import 'app/core/styles/main-styles.scss';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: $dark;
+    overflow-y: hidden
+}

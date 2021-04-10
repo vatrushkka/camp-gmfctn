@@ -1,0 +1,50 @@
+@import "../../styles/colors";
+
+.mat-sidenav-container{
+    height: 100%;
+    background-color: $dark;
+
+    .mat-sidenav {
+        padding: 20px;
+        background-color: $grey;
+        width: 20%;
+    }
+
+    .mat-toolbar{ 
+        color: $white;
+        background-color: $grey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .sidebar {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .navigation {
+            .router-link-active {
+                color: $green;
+                border-top: 3px solid $green;
+            }
+
+            button {
+                border: none;
+                padding: 15px 20px;
+                color: $white;
+                font-size: 20px;
+                background-color: $grey;
+                outline: none;
+            }
+    
+            p {
+                margin: 0;
+                color: $white;
+            }
+        }
+    }    
+}
