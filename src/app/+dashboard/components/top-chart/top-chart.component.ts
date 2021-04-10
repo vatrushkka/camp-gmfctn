@@ -28,7 +28,6 @@ export class TopChartComponent implements OnInit{
 
   private calculateLength(): void {
     const maxLength = this.users[0].xp;
-    
     for (let i = 0; i < this.users.length; ++i) {
       this.users[i].lengthXP = this.users[i].xp * 100 / maxLength;
     }
