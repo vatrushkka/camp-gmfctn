@@ -4,11 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'personalAchievementsDate'
 })
 export class PersonalAchievementsDatePipe implements PipeTransform {
-
   transform(value: Date): string {
-
-  debugger
-
     const difference = Math.abs(new Date().getTime() - new Date(value).getTime());
     const diffInMinutes = difference / 1000 / 60;
 
