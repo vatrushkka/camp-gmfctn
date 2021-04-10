@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {achievements} from '../../data/exoftAchievementsData';
+import { Component } from '@angular/core';
+import { achievements } from '../../data/exoftAchievementsData';
 
 @Component({
   selector: 'app-exoft-achievements',

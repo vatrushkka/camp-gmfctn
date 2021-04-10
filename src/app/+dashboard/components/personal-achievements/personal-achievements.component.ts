@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { achievements } from '../../data/personal-achievements-data';
 
 @Component({

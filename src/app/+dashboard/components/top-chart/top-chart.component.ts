@@ -10,7 +10,7 @@ export class TopChartComponent implements OnInit{
 
   users = users;
 
-  private sortedUsers: { xp: number; }[] = users.sort((n1,n2) => {
+  private sortedUsers: { xp: number; }[] = users.sort((n1, n2) => {
     if (n1.xp > n2.xp) {
         return -1;
     }
@@ -25,12 +25,11 @@ export class TopChartComponent implements OnInit{
   ngOnInit(): void {
   this.calculateLength();
   }
- 
+
   private calculateLength(): void {
     const maxLength = this.users[0].xp;
-
-    for ( let i = 0; i < this.users.length; ++i){
-
+    
+    for (let i = 0; i < this.users.length; ++i) {
       this.users[i].lengthXP = this.users[i].xp * 100 / maxLength;
     }
   }
