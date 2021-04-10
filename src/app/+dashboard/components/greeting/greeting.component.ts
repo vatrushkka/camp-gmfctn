@@ -1,15 +1,18 @@
 import {Component} from '@angular/core';
+import { OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-greeting',
   templateUrl: './greeting.component.html',
   styleUrls: ['./greeting.component.scss']
 })
-export class GreetingComponent {  
+export class GreetingComponent implements OnInit {
+  greeting!: string;
 
-  public greeting = this.dayTime();
-
-  dayTime(): string {
+  ngOnInit(): void {
+    this.greeting = this.getDayTime();
+  }
+  private getDayTime(): string {
     const hour = new Date().getHours();
 
     if (hour >= 5 && hour <= 11) {

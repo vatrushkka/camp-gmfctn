@@ -1,14 +1,14 @@
 // modules
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {BrowserModule} from '@angular/platform-browser';
-import {MaterialModule} from './modules/material.module';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
+import { MaterialModule } from './modules/material.module';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from '../app-routing.module';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // components
-import {HeaderComponent} from './components/header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
