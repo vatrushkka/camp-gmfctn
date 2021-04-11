@@ -1,7 +1,10 @@
+@import '../../../core/styles/colors';
+
 .container-greeting {
   display: flex;
   flex-direction: column;
-  height: 60%;
+  height: 65%;
+  width: 90%;
   margin: 30px 25px;
   justify-content: space-around;
 
