@@ -1,10 +1,13 @@
 @import '../core/styles/colors';
 
 .content {
-  width: 100vw;
-  height: 92vh;
+  width: 98.4vw;
+  height: 90vh;
+  padding: 15px;
   background-color: $dark;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .width-height {
     width: 100%;
@@ -19,49 +22,21 @@
     color: $white;
   }
 
-  .greeting-card {
-    height: 19%;
-    width: 99%;
-    border-radius: 5px;
-    background-color: $green;
-  }
-
   .small-card {
-    width: 24.5%;
+    width: 32.7%;
+    height: 99%;
     border-radius: 5px;
   }
 
-  .medium-card {
-    width: 49%;
+  .middle-card {
+    width: 66.4%;
+    height: 99%;
     border-radius: 5px;
   }
 
-  .large-card {
-    width: 74.4%;
-    border-radius: 5px;
-  }
-
-  .left-container {
-    width: 80%;
-    height: 98%;
+  .components {
     display: flex;
-    flex-direction: column;
+    height: 49.5%;
     justify-content: space-between;
-    margin: 15px 0 15px 15px;
-
-    .components {
-      width: 99%;
-      height: 39%;
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
-  .tall-card {
-    width: 19%;
-    height: 98%;
-    margin-right: 15px;
-    margin-top: 15px;
-    border-radius: 5px;
   }
 }
