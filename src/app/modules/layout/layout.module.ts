@@ -1,6 +1,8 @@
 // modules
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MaterialModule } from '../../shared/modules/material/material.module';
+import { AppRoutingModule } from '../../app-routing.module';
 
 // components
 import { HeaderComponent } from './components/header/header.component';
@@ -17,7 +19,9 @@ import { LayoutComponent } from './layout.component';
     LayoutComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule,
+    AppRoutingModule
   ]
 })
 export class LayoutModule { }

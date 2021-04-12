@@ -1,0 +1,30 @@
+@import "../../core/styles/colors";
+
+
+.mat-sidenav-container {
+  height: 100%;
+  background-color: $dark;
+
+  .mat-sidenav {
+    padding: 20px;
+    background-color: $grey;
+    width: 20%;
+  }
+
+  .mat-toolbar {
+    color: $white;
+    background-color: $grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .sidebar {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
