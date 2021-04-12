@@ -2,7 +2,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BadgesRoutingModule } from './badges-routing.module';
-import { ThankYouModule } from '../shared/modules/thank-you.module';
+import { ThankYouModule } from '../../shared/modules/thank-you.module';
 
 // components
 import { LastAchievementsComponent } from './components/last-achievements/last-achievements.component';

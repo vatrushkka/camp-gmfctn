@@ -1,4 +1,4 @@
-@import "../../styles/colors";
+@import "../../../../core/styles/colors";
 
 .mat-sidenav-container{
     height: 100%;
@@ -10,7 +10,7 @@
         width: 20%;
     }
 
-    .mat-toolbar{ 
+    .mat-toolbar{
         color: $white;
         background-color: $grey;
         display: flex;
@@ -40,11 +40,11 @@
                 background-color: $grey;
                 outline: none;
             }
-    
+
             p {
                 margin: 0;
                 color: $white;
             }
         }
-    }    
+    }
 }
