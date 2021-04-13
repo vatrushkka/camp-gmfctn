@@ -1,1 +1,26 @@
-<p>achievements-list works!</p>
+<div class="container">
+  <div class="list-header">
+    <p class="text-uppercase">full list of achievements</p>
+  </div>
+  <div class="achievements-header">
+    <p class="large-text">Achievement</p>
+    <p class="small-text"><span class="text-uppercase">exp</span> points</p>
+    <p class="small-text">Date</p>
+  </div>
+  <div class="achievements-scroll">
+    <div class="achievements-list" *ngFor="let item of achievements">
+      <div class="achievement">
+        <div class="img-text">
+          <img src="{{ item.img}}" alt="">
+          <p>{{ item.title }}</p>
+        </div>
+        <div class="xp">
+          {{ item.xp }}
+        </div>
+        <div class="time">
+          {{ item.time | customDate }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

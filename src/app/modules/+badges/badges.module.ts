@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BadgesRoutingModule } from './badges-routing.module';
 import { ThankYouModule } from '../../shared/modules/thank-you.module';
+import { DatePipeModule } from '../../core/pipes/date-pipe/date-pipe.module';
 
 // components
 import { LastAchievementsComponent } from './components/last-achievements/last-achievements.component';
@@ -22,7 +23,8 @@ import { BadgesComponent } from './badges.component';
   imports: [
     CommonModule,
     BadgesRoutingModule,
-    ThankYouModule
+    ThankYouModule,
+    DatePipeModule
   ]
 })
 export class BadgesModule { }
