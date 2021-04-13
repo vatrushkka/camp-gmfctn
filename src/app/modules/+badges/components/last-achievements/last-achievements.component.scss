@@ -1,1 +1,48 @@
 @import '../../../../core/styles/colors';
+
+.achievements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+
+  .achievement {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 60px;
+  }
+
+  .achievement-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    p {
+      line-height: 1.5em;
+      margin-bottom: 0;
+      margin-left: 15px;
+    }
+  }
+}
+
+.xp {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+
+  .coin {
+    width: 15px;
+    height: 15px;
+    background-color: $yellow;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  p {
+    color: $yellow;
+    margin-bottom: 0;
+  }
+}

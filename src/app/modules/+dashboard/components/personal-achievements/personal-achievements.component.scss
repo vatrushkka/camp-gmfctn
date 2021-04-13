@@ -1,15 +1,6 @@
 @import '../../../../core/styles/colors';
 
-button {
-  padding: 5px 15px;
-  background-color: $green;
-  border: none;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.achievement {
+.achievements {
   display: flex;
   align-items: center;
   justify-content: space-between;

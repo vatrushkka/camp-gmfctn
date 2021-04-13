@@ -39,11 +39,41 @@
   .achievements-list {
 
     .achievement {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 15px 0;
 
       .img-text {
+        display: flex;
+        width: 55%;
 
         img {
-          width: 50px;
+          width: 70px;
+        }
+
+        p {
+          margin-bottom: 0;
+          margin-left: 10px;
+          font-size: 18px;
+        }
+      }
+
+      .xp {
+        width: 15%;
+        text-align: center;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      .time {
+        width: 15%;
+        text-align: center;
+
+        p {
+          margin-bottom: 0;
         }
       }
     }
