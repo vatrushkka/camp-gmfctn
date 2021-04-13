@@ -7,9 +7,7 @@ import { achievements } from 'src/app/modules/+dashboard/data/personal-achieveme
   styleUrls: ['./achievements-list.component.scss']
 })
 export class AchievementsListComponent {
-  achievements = achievements;
-
-  private sortedAchievements: { time: Date; }[] = achievements.sort((n1, n2) => {
+  public achievements = achievements.sort((n1, n2) => {
     if (n1.time > n2.time) {
       return -1;
     }

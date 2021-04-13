@@ -7,6 +7,6 @@ import { availableChallenges, endedChallenges } from '../../data/challengesData'
   styleUrls: ['./challenges.component.scss']
 })
 export class ChallengesComponent {
-  available = availableChallenges;
-  ended = endedChallenges;
+  public available = availableChallenges;
+  public ended = endedChallenges;
 }

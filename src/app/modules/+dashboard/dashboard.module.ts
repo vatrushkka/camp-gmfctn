@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from 'src/app/shared/modules/material/material.module';
 import { DashboardRoutingModule } from './dashboard-routing.module';
-import { ThankYouModule } from '../../shared/modules/thank-you.module';
-import { DatePipeModule } from '../../core/pipes/date-pipe/date-pipe.module';
+import { ThankYouModule } from 'src/app/shared/modules/thank-you.module';
+import { DatePipeModule } from 'src/app/core/pipes/date-pipe/date-pipe.module';
 
 // components
 import { BadgesComponent } from './components/badges/badges.component';

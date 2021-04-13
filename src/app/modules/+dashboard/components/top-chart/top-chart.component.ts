@@ -1,3 +1,5 @@
+// @ts-ignore
+
 import { Component, OnInit } from '@angular/core';
 import { users } from '../../data/topChartData';
 
@@ -8,9 +10,7 @@ import { users } from '../../data/topChartData';
 })
 export class TopChartComponent implements OnInit {
 
-  users = users;
-
-  private sortedUsers: { xp: number; }[] = users.sort((n1, n2) => {
+  users = users.sort((n1, n2) => {
     if (n1.xp > n2.xp) {
       return -1;
     }

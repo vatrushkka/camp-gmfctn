@@ -12,7 +12,7 @@
             <div class="top-user" *ngFor="let user of users">
                 <div class="user">
                     <div class="icon-name-user">
-                        <img src="{{ user.icon }}" alt="">
+                        <img src="{{ user.icon }}" alt="icon">
 
                     <div class="user-name">
                         <p>{{ user.firstName }}</p>
@@ -22,9 +22,9 @@
 
                     <p class="xp text-uppercase">{{ user.xp }}xp</p>
                 </div>
-    
+
                 <div class="user-top">
-                    <div class="top-line" 
+                    <div class="top-line"
                         [style.background-color]="user.color"
                         [ngStyle]="{'width': user.lengthXP+'%', 'background-color':user.color}"
                     ></div>
