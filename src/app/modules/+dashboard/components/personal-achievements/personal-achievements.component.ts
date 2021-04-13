@@ -8,4 +8,16 @@ import { achievements } from '../../data/personal-achievements-data';
 })
 export class PersonalAchievementsComponent {
   achievements = achievements;
+
+  private sortedAchievements: { time: Date; }[] = achievements.sort((n1, n2) => {
+    if (n1.time > n2.time) {
+      return -1;
+    }
+
+    if (n1.time > n2.time) {
+      return 1;
+    }
+
+    return 0;
+  });
 }
