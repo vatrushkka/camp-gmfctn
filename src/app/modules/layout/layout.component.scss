@@ -1,5 +1,9 @@
 @import 'src/app/core/styles/colors';
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .mat-sidenav-container {
   height: 100%;
   background-color: $dark;
