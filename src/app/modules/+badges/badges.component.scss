@@ -1,9 +1,9 @@
 @import 'src/app/core/styles/colors';
 
 .content {
-  width: 98.4vw;
-  height: 90vh;
-  padding: 15px;
+  width: 100vw;
+  height: 92.3vh;
+  padding-bottom: 10px;
   background-color: $dark;
   display: flex;
   flex-direction: column;
@@ -35,8 +35,18 @@
   }
 
   .components {
+    width: 98.4%;
+    height: 49.6%;
+    margin: 15px 15px 0 15px;
     display: flex;
-    height: 49.5%;
     justify-content: space-between;
+  }
+
+  .margin-top {
+    margin-top: 5px;
+  }
+
+  .margin-bottom {
+  margin-bottom: 5px;
   }
 }
