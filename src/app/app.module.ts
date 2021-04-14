@@ -1,6 +1,9 @@
+// modules
 import { NgModule } from '@angular/core';
 import { CoreModule } from './core/core.module';
+import { LayoutModule } from './modules/layout/layout.module';
 
+// components
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,7 +11,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    CoreModule
+    CoreModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

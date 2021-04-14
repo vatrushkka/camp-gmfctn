@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="header">
+        <p class="text-uppercase">top chart</p>
+    </div>
+
+    <div class="top">
+        <div class="top-header">
+            <p>Name</p>
+            <p>Total XP</p>
+        </div>
+        <div class="top-users">
+            <div class="top-user" *ngFor="let user of users">
+                <div class="user">
+                    <div class="icon-name-user">
+                        <img src="{{ user.icon }}" alt="icon">
+
+                    <div class="user-name">
+                        <p>{{ user.firstName }}</p>
+                        <p>{{ user.lastName }}</p>
+                    </div>
+                    </div>
+
+                    <p class="xp text-uppercase">{{ user.xp }}xp</p>
+                </div>
+
+                <div class="user-top">
+                    <div class="top-line"
+                        [style.background-color]="user.color"
+                        [ngStyle]="{'width': user.lengthXP+'%', 'background-color':user.color}"
+                    ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

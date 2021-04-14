@@ -1,0 +1,39 @@
+@import 'src/app/core/styles/colors';
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.mat-sidenav-container {
+  height: 100%;
+  background-color: $dark;
+
+  .mat-sidenav {
+    padding: 20px;
+    background-color: $grey;
+    width: 20%;
+  }
+
+  .mat-toolbar {
+    width: 100%;
+    color: $white;
+    background-color: $grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .sidebar {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .user {
+      width: 15%;
+      height: 70%;
+    }
+  }
+}

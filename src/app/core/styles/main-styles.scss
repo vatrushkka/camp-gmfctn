@@ -1,3 +1,30 @@
-.text-uppercase {
-    text-transform: uppercase;
+@import './colors';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+  height: 90%;
+  margin: 20px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+
+    .text-uppercase {
+      text-transform: uppercase;
+    }
+
+    button {
+      padding: 5px 15px;
+      background-color: $green;
+      border: none;
+      color: $white;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
 }

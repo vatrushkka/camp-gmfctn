@@ -9,11 +9,11 @@ const routes: Routes = [
   },
   {
     path: 'dashboard',
-    loadChildren: () => import('./+dashboard/dashboard.module').then(module => module.DashboardModule)
+    loadChildren: () => import('./modules/+dashboard/dashboard.module').then(module => module.DashboardModule)
   },
   {
     path: 'badges',
-    loadChildren: () => import('./+badges/badges.module').then(module => module.BadgesModule)
+    loadChildren: () => import('./modules/+badges/badges.module').then(module => module.BadgesModule)
   }
 ];
 

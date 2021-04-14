@@ -1,0 +1,96 @@
+@import 'src/app/core/styles/colors';
+
+.list-header {
+
+  p {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.achievements-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .large-text {
+    width: 55%;
+    margin-bottom: 0;
+    margin-left: 5px;
+  }
+
+  .small-text {
+    width: 15%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+.achievements-scroll {
+  overflow-y: scroll;
+  width: 100%;
+  height: 85%;
+
+  .achievements-list {
+
+    .achievement {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 15px 0;
+
+      .img-text {
+        display: flex;
+        align-items: center;
+        width: 55%;
+
+        img {
+          width: 70px;
+        }
+
+        p {
+          margin-bottom: 0;
+          margin-left: 10px;
+          font-size: 18px;
+        }
+      }
+
+      .xp {
+        width: 15%;
+        text-align: center;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      .time {
+        width: 15%;
+        text-align: center;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+.achievements-scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: $dark-grey;
+  border-radius: 5px;
+}
+
+.achievements-scroll::-webkit-scrollbar-thumb {
+  background: $green;
+  border-radius: 15px;
+}

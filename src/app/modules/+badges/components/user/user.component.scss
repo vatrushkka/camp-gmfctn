@@ -1,0 +1,33 @@
+@import 'src/app/core/styles/colors';
+
+.user-header {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    padding: 5px 15px;
+    background-color: $green;
+    border: none;
+    color: $white;
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+
+  img {
+    width: 35%;
+    border-radius: 50%;
+    border: 3px solid $green;
+    margin-bottom: 20px;
+  }
+
+  .user-name {
+    font-size: 20px;
+  }
+}

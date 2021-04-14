@@ -1,0 +1,74 @@
+@import 'src/app/core/styles/colors';
+
+.top {
+  height: 90%;
+
+  .top-header {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    border-bottom: 1px solid $green;
+    margin-bottom: 10px;
+
+    p {
+      margin: 0;
+      color: $green;
+    }
+  }
+
+  .top-users {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+
+    .top-user {
+      display: flex;
+      align-items: center;
+      margin-right: 5px;
+
+      .user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        margin-right: 10px;
+
+        .icon-name-user {
+          display: flex;
+
+          img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 2px solid $green;
+            margin-right: 10px;
+          }
+
+          .user-name {
+            p {
+              margin: 0;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .xp {
+          margin: 0;
+          font-size: 14px;
+          text-align: center;
+          width: 50px;
+        }
+      }
+
+      .user-top {
+        width: 60%;
+        height: 30px;
+
+        .top-line {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

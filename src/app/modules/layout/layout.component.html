@@ -1,0 +1,27 @@
+<mat-sidenav-container>
+  <mat-sidenav class="layout" [(opened)]="opened">
+    <div class="sidenav-header">
+      <p class="text-uppercase">gmfctn!</p>
+
+      <button mat-icon-button aria-label="Close sidebar" (click)="opened=!opened">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <app-sidebar></app-sidebar>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <div class="sidebar">
+        <a mat-icon-button aria-label="Show sidebar" (click)="opened=!opened">
+          <mat-icon>menu</mat-icon>
+        </a>
+        <p class="text-uppercase">gmfctn</p>
+      </div>
+      <app-header></app-header>
+      <div class="user">
+        user
+      </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,42 @@
+@import 'src/app/core/styles/colors';
+
+.content {
+  width: 98.4vw;
+  height: 90vh;
+  padding: 15px;
+  background-color: $dark;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .width-height {
+    width: 100%;
+    height: 100%;
+  }
+
+  .background {
+    background-color: $grey;
+  }
+
+  .color {
+    color: $white;
+  }
+
+  .small-card {
+    width: 32.7%;
+    height: 99%;
+    border-radius: 5px;
+  }
+
+  .middle-card {
+    width: 66.4%;
+    height: 99%;
+    border-radius: 5px;
+  }
+
+  .components {
+    display: flex;
+    height: 49.5%;
+    justify-content: space-between;
+  }
+}

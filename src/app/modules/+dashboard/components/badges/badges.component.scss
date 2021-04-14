@@ -1,0 +1,43 @@
+@import 'src/app/core/styles/colors';
+
+.badges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    font-size: 20px;
+  }
+}
+
+#badges-number {
+  font-size: 90px;
+  font-weight: 500;
+  color: $green;
+  line-height: 1em;
+  margin: 0;
+}
+
+.badges-down {
+  display: flex;
+  justify-content: space-around;
+}
+
+.badges-cont {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .green-dot {
+    background-color: $green;
+    width: 5px;
+    height: 5px;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+}
