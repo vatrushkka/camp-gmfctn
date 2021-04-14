@@ -3,15 +3,32 @@
 .text-uppercase {
   text-transform: uppercase;
 }
-
 .mat-sidenav-container {
   height: 100%;
   background-color: $dark;
 
   .mat-sidenav {
-    padding: 20px;
+    padding: 10px;
     background-color: $grey;
     width: 20%;
+
+    .sidenav-header {
+      color: $white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+
+      #empty {
+        width: 24px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
   }
 
   .mat-toolbar {
