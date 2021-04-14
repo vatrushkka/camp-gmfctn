@@ -10,7 +10,7 @@ import { users } from '../../data/topChartData';
 })
 export class TopChartComponent implements OnInit {
 
-  users = users.sort((n1, n2) => {
+  public users = users.sort((n1, n2) => {
     if (n1.xp > n2.xp) {
       return -1;
     }
