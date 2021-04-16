@@ -14,6 +14,7 @@ import { GreetingComponent } from './components/greeting/greeting.component';
 import { TopChartComponent } from './components/top-chart/top-chart.component';
 import { ExoftAchievementsComponent } from './components/exoft-achievements/exoft-achievements.component';
 import { DashboardComponent } from './dashboard.component';
+import {AchievementAssignModalComponent} from './components/achievement-assign-modal/achievement-assign-modal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DashboardComponent } from './dashboard.component';
     GreetingComponent,
     TopChartComponent,
     ExoftAchievementsComponent,
-    DashboardComponent
+    DashboardComponent,
+    AchievementAssignModalComponent
   ],
   imports: [
     CommonModule,
