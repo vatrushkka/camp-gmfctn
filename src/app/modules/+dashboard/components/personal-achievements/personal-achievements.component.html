@@ -1,7 +1,7 @@
 <div class="container">
   <div class="header">
     <p class="text-uppercase">personal achievements</p>
-    <button>Request</button>
+    <button (click)="openRequest()">Request</button>
   </div>
 
   <div *ngFor="let achievement of achievements" class="achievements">

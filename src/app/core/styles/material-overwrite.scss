@@ -1,0 +1,7 @@
+@import 'src/app/core/styles/colors';
+
+// dialog window overwrite
+.mat-dialog-container {
+  background-color: $grey;
+  color: $white;
+}

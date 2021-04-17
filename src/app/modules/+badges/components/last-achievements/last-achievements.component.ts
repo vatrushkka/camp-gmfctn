@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { achievements } from 'src/app/modules/+dashboard/data/personal-achievements-data';
+import { MatDialog } from '@angular/material/dialog';
+import { AchievementAssignModalComponent } from 'src/app/shared/modals/achievement-assign-modal/achievement-assign-modal.component';
 
 @Component({
   selector: 'app-last-achievements',
@@ -18,4 +20,10 @@ export class LastAchievementsComponent {
 
     return 0;
   });
+
+  constructor(public dialog: MatDialog) {}
+
+  openRequest(): void {
+    this.dialog.open(AchievementAssignModalComponent);
+  }
 }

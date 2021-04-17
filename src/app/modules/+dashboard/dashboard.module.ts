@@ -5,6 +5,7 @@ import { MaterialModule } from 'src/app/shared/modules/material/material.module'
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { ThankYouModule } from 'src/app/shared/modules/thank-you.module';
 import { DatePipeModule } from 'src/app/core/pipes/date-pipe/date-pipe.module';
+import { AchievementAssignModalModule } from 'src/app/shared/modals/achievement-assign-modal/achievement-assign-modal.module';
 
 // components
 import { BadgesComponent } from './components/badges/badges.component';
@@ -14,7 +15,6 @@ import { GreetingComponent } from './components/greeting/greeting.component';
 import { TopChartComponent } from './components/top-chart/top-chart.component';
 import { ExoftAchievementsComponent } from './components/exoft-achievements/exoft-achievements.component';
 import { DashboardComponent } from './dashboard.component';
-import {AchievementAssignModalComponent} from './components/achievement-assign-modal/achievement-assign-modal.component';
 
 @NgModule({
   declarations: [
@@ -24,15 +24,15 @@ import {AchievementAssignModalComponent} from './components/achievement-assign-m
     GreetingComponent,
     TopChartComponent,
     ExoftAchievementsComponent,
-    DashboardComponent,
-    AchievementAssignModalComponent
+    DashboardComponent
   ],
   imports: [
     CommonModule,
     MaterialModule,
     DashboardRoutingModule,
     ThankYouModule,
-    DatePipeModule
+    DatePipeModule,
+    AchievementAssignModalModule
   ]
 })
 export class DashboardModule { }

@@ -9,10 +9,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
-import { MatGridListModule } from '@angular/material/grid-list';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
-import { MatStepperModule } from '@angular/material/stepper';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [  ],
@@ -26,10 +25,9 @@ import { MatStepperModule } from '@angular/material/stepper';
     MatCardModule,
     MatSidenavModule,
     MatMenuModule,
-    MatGridListModule,
     MatListModule,
     MatTableModule,
-    MatStepperModule
+    MatDialogModule
   ],
   exports: [
     MatTabsModule,
@@ -40,10 +38,10 @@ import { MatStepperModule } from '@angular/material/stepper';
     MatCardModule,
     MatSidenavModule,
     MatMenuModule,
-    MatGridListModule,
     MatListModule,
     MatTableModule,
-    MatStepperModule
-    ]
+    MatDialogModule
+
+  ]
 })
 export class MaterialModule { }
