@@ -1,6 +1,6 @@
 // modules
 import { NgModule } from '@angular/core';
-import {MaterialModule} from 'src/app/shared/modules/material/material.module';
+import { MaterialModule } from 'src/app/shared/modules/material/material.module';
 
 // components
 import {AchievementAssignModalComponent} from './achievement-assign-modal.component';
