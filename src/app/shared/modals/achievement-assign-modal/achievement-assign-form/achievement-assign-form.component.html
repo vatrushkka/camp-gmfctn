@@ -1,1 +1,10 @@
-<p>achievement-assign-form works!</p>
+<div class="form-container">
+  <select>
+    <option value="" disabled selected hidden>Achievements</option>
+    <option *ngFor="let achievement of achievements">
+      {{ achievement.title }}
+    </option>
+  </select>
+
+  <textarea rows="2"></textarea>
+</div>
