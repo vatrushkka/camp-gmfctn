@@ -8,7 +8,7 @@
   <div mat-dialog-content class="dialog-content">
     <div class="form-container">
       <form [formGroup]="inputForm">
-        <select class="achievement">
+        <select formControlName="achievement">
           <option disabled selected hidden>Achievements</option>
 
           <option *ngFor="let achievement of achievements">
@@ -16,11 +16,15 @@
           </option>
         </select>
 
-        <label class="message">Your message</label>
+        <label>Your message</label>
 
-        <textarea required></textarea>
+        <textarea formControlName="message"></textarea>
 
-        <button (click)="submit()" [disabled]="inputForm?.invalid">Send</button>
+        <button
+          (click)="submit()"
+          [disabled]="!inputForm.valid">
+          Send
+        </button>
       </form>
     </div>
   </div>

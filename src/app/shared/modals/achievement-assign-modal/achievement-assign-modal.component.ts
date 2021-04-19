@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { achievements } from 'src/app/modules/+dashboard/data/personal-achievements-data';
 import {FormGroup, FormBuilder, Validators, FormControl} from '@angular/forms';
 
@@ -7,24 +7,18 @@ import {FormGroup, FormBuilder, Validators, FormControl} from '@angular/forms';
   templateUrl: './achievement-assign-modal.component.html',
   styleUrls: ['./achievement-assign-modal.component.scss']
 })
-export class AchievementAssignModalComponent implements OnInit {
+export class AchievementAssignModalComponent {
   public achievements = achievements;
 
   inputForm = new FormGroup({
-    achievement: new FormControl(''),
-    message: new FormControl('')
+    achievement: new FormControl('', Validators.required),
+    message: new FormControl('', Validators.required)
   });
 
   constructor(private readonly fb: FormBuilder) { }
 
-  ngOnInit(): void {
-    this.inputForm = new FormGroup({
-      achievement: this.fb.control('', Validators.required),
-      message: this.fb.control('', Validators.required)
-    });
-  }
-
   submit(): void {
+
     if (this.inputForm.valid) {
       alert('You requested an achievement');
     }

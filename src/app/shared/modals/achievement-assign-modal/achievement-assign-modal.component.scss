@@ -88,6 +88,10 @@
           font-size: 15px;
           font-weight: 600;
           align-self: center;
+
+          &:disabled {
+            opacity: 0.5;
+          }
         }
       }
     }
