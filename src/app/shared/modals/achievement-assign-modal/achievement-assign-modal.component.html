@@ -6,6 +6,22 @@
   <p mat-dialog-title>Please, leave a message and your achievement will be assigned soon</p>
 
   <div mat-dialog-content class="dialog-content">
-    <app-achievement-assign-form></app-achievement-assign-form>
+    <div class="form-container">
+      <form [formGroup]="inputForm">
+        <select class="achievement">
+          <option disabled selected hidden>Achievements</option>
+
+          <option *ngFor="let achievement of achievements">
+            {{ achievement.title }}
+          </option>
+        </select>
+
+        <label class="message">Your message</label>
+
+        <textarea required></textarea>
+
+        <button (click)="submit()" [disabled]="inputForm?.invalid">Send</button>
+      </form>
+    </div>
   </div>
 </div>
