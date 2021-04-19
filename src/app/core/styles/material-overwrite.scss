@@ -6,6 +6,12 @@
   color: $white;
 }
 
-.mat-select-panel {
-  color: #1ddbdb;
+.mat-menu {
+  width: 250px;
+  background-color: $grey;
+
+  button {
+    color: $white;
+    font-size: 17px;
+  }
 }

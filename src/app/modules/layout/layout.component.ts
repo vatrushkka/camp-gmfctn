@@ -8,5 +8,6 @@ import {user} from '../../shared/data/user-data';
 })
 export class LayoutComponent {
   opened = false;
+  userMenuOpened = false;
   public user = user;
 }
