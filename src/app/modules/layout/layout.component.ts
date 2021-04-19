@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {user} from '../../shared/data/user-data';
 
 @Component({
   selector: 'app-layout',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class LayoutComponent {
   opened = false;
+  public user = user;
 }
