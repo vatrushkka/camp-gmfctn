@@ -18,7 +18,6 @@ export class AchievementAssignModalComponent {
   constructor(private readonly fb: FormBuilder) { }
 
   submit(): void {
-
     if (this.inputForm.valid) {
       alert('You requested an achievement');
     }

@@ -9,7 +9,7 @@
     <div class="form-container">
       <form [formGroup]="inputForm">
         <select formControlName="achievement">
-          <option disabled selected hidden>Achievements</option>
+          <option selected hidden>Achievements</option>
 
           <option *ngFor="let achievement of achievements">
             {{ achievement.title }}
@@ -21,6 +21,7 @@
         <textarea formControlName="message"></textarea>
 
         <button
+          mat-dialog-close
           (click)="submit()"
           [disabled]="!inputForm.valid">
           Send
