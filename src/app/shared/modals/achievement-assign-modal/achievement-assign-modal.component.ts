@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { achievements } from 'src/app/modules/+dashboard/data/personal-achievements-data';
-import {FormGroup, FormBuilder, Validators, FormControl} from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-achievement-assign-modal',

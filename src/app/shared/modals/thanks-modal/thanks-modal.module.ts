@@ -5,11 +5,11 @@ import { MaterialModule } from 'src/app/shared/modules/material/material.module'
 import { ReactiveFormsModule } from '@angular/forms';
 
 // components
-import { AchievementAssignModalComponent } from './achievement-assign-modal.component';
+import { ThanksModalComponent } from './thanks-modal.component';
 
 @NgModule({
   declarations: [
-    AchievementAssignModalComponent
+    ThanksModalComponent
   ],
   imports: [
     MaterialModule,
@@ -17,4 +17,4 @@ import { AchievementAssignModalComponent } from './achievement-assign-modal.comp
     CommonModule
   ]
 })
-export class AchievementAssignModalModule { }
+export class ThanksModalModule { }
