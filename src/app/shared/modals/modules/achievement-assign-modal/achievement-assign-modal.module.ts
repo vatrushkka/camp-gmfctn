@@ -12,9 +12,9 @@ import { AchievementAssignModalComponent } from './achievement-assign-modal.comp
     AchievementAssignModalComponent
   ],
   imports: [
+    CommonModule,
     MaterialModule,
-    ReactiveFormsModule,
-    CommonModule
+    ReactiveFormsModule
   ]
 })
 export class AchievementAssignModalModule { }

@@ -12,9 +12,9 @@ import { ThanksModalComponent } from './thanks-modal.component';
     ThanksModalComponent
   ],
   imports: [
+    CommonModule,
     MaterialModule,
-    ReactiveFormsModule,
-    CommonModule
+    ReactiveFormsModule
   ]
 })
 export class ThanksModalModule { }
