@@ -38,7 +38,43 @@
     }
 
     .user-achievements {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       width: 700px;
+
+      .achievement {
+        width: 120px;
+        margin: 0 10px 10px;
+
+        .achievement-img-amount{
+          position: relative;
+          display: flex;
+          justify-content: center;
+
+          .amount {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: $green;
+            border-radius: 50%;
+            border: 1px solid $white;
+            width: 1.15rem;
+            height: 1.15rem;
+            text-align: center;
+          }
+
+          img {
+            width: 100px;
+            margin-bottom: 10px;
+          }
+        }
+
+        .title {
+          text-align: center;
+          font-size: 17px;
+        }
+      }
     }
   }
 

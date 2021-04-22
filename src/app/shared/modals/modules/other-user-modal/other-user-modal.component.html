@@ -13,7 +13,15 @@
     </div>
 
     <div class="user-achievements">
+      <div class="achievement" *ngFor="let item of achievements">
+        <div class="achievement-img-amount">
+          <div class="amount">{{ item.amount }}</div>
 
+          <img src="{{ item.img }}" alt="icon">
+        </div>
+
+        <p class="title">{{ item.title }}</p>
+      </div>
     </div>
   </div>
 
