@@ -11,10 +11,10 @@
         <div class="top-users">
             <div class="top-user" *ngFor="let user of users">
                 <div class="user">
-                    <div class="icon-name-user">
+                    <div class="icon-name-user" (click)="openUser()">
                         <img src="{{ user.icon }}" alt="icon">
 
-                    <div class="user-name">
+                    <div class="user-name" (click)="openUser()">
                         <p>{{ user.firstName }}</p>
                         <p>{{ user.lastName }}</p>
                     </div>
