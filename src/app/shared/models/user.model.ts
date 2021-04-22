@@ -1,6 +1,6 @@
 export interface User {
-  userImg: string;
-  userFirstName: string;
-  userLastName: string;
-  userXP: number;
+  icon: string;
+  firstName: string;
+  lastName: string;
+  xp: number;
 }

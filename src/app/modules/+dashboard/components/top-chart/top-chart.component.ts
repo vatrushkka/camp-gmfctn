@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { users } from '../../data/topChartData';
 import { MatDialog } from '@angular/material/dialog';
-import {AchievementAssignModalComponent} from '../../../../shared/modals/achievement-assign-modal/achievement-assign-modal.component';
-import {OtherUserModalComponent} from '../../../../shared/modals/other-user-modal/other-user-modal.component';
+import { OtherUserModalComponent } from 'src/app/shared/modals/modules/other-user-modal/other-user-modal.component';
+import { User } from 'src/app/shared/models/user.model';
 
 @Component({
   selector: 'app-top-chart',
@@ -33,7 +33,14 @@ export class TopChartComponent implements OnInit {
     });
   }
 
-  openUser(): void {
-    this.dialog.open(OtherUserModalComponent);
+  openUser(user: User): void {
+    this.dialog.open(OtherUserModalComponent, {
+      data: {
+        icon: user.icon,
+        firstName: user.firstName,
+        lastName: user.lastName,
+        xp: user.xp
+      }
+    });
   }
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { achievements } from '../../data/personal-achievements-data';
 import { MatDialog } from '@angular/material/dialog';
-import { AchievementAssignModalComponent } from 'src/app/shared/modals/achievement-assign-modal/achievement-assign-modal.component';
+import { AchievementAssignModalComponent } from 'src/app/shared/modals/modules/achievement-assign-modal/achievement-assign-modal.component';
 
 @Component({
   selector: 'app-personal-achievements',

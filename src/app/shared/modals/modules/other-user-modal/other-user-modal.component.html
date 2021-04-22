@@ -5,7 +5,11 @@
 
   <div class="user-content">
     <div class="user">
+      <img src="{{ data.icon }}" alt="">
 
+      <p class="user-name">{{ data.firstName }} {{ data.lastName }}</p>
+
+      <p class="text-uppercase"><span class="green-text text-uppercase">exp:</span> {{ data.xp }}xp</p>
     </div>
 
     <div class="user-achievements">
@@ -13,7 +17,7 @@
     </div>
   </div>
 
-  <button>
+  <button class="bottom-button text-uppercase" (click)="openThanks()">
     say thanks
   </button>
 </div>

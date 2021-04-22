@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
-import { OtherUserModalModule } from '../../shared/modals/other-user-modal/other-user-modal.module';
-import {AchievementAssignModalComponent} from '../../shared/modals/achievement-assign-modal/achievement-assign-modal.component';
+import { OtherUserModalModule } from '../../shared/modals/modules/other-user-modal/other-user-modal.module';
 
 @NgModule({
   declarations: [],

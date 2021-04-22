@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
-import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 import { User } from 'src/app/shared/models/user.model';
+import { ThanksModalComponent } from '../thanks-modal/thanks-modal.component';
 
 @Component({
   selector: 'app-other-user-modal',
@@ -10,5 +11,9 @@ import { User } from 'src/app/shared/models/user.model';
 export class OtherUserModalComponent {
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: User,
-    private readonly matDialog: MatDialog) { }
+    private dialog: MatDialog) { }
+
+  openThanks(): void {
+    this.dialog.open(ThanksModalComponent);
+  }
 }

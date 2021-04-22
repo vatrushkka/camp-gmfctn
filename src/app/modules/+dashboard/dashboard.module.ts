@@ -5,7 +5,7 @@ import { MaterialModule } from 'src/app/shared/modules/material/material.module'
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { ThankYouModule } from 'src/app/shared/modules/thank-you.module';
 import { DatePipeModule } from 'src/app/core/pipes/date-pipe/date-pipe.module';
-import { AchievementAssignModalModule } from 'src/app/shared/modals/achievement-assign-modal/achievement-assign-modal.module';
+import { AchievementAssignModalModule } from 'src/app/shared/modals/modules/achievement-assign-modal/achievement-assign-modal.module';
 
 // components
 import { BadgesComponent } from './components/badges/badges.component';
