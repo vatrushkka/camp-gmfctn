@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { achievements } from '../../data/exoftAchievementsData';
+import { achievements } from '@dashboard/data/exoftAchievementsData';
 import { MatDialog } from '@angular/material/dialog';
-import { OtherUserModalComponent } from 'src/app/shared/modals/modules/other-user-modal/other-user-modal.component';
-import { User } from 'src/app//shared/models/user.model';
+import { OtherUserModalComponent } from '@shared/modals/modules/other-user-modal/other-user-modal.component';
+import { User } from '@shared/models/user.model';
 
 @Component({
   selector: 'app-exoft-achievements',

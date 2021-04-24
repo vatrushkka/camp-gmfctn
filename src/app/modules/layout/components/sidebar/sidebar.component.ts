@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
-import {ProfileEditModalComponent} from "../../../../shared/modals/modules/profile-edit-modal/profile-edit-modal.component";
+import {ProfileEditModalComponent} from "@shared/modals/modules/profile-edit-modal/profile-edit-modal.component";
 
 @Component({
   selector: 'app-sidebar',

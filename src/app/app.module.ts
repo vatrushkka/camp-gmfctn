@@ -1,7 +1,7 @@
 // modules
 import { NgModule } from '@angular/core';
-import { CoreModule } from './core/core.module';
-import { LayoutModule } from './modules/layout/layout.module';
+import { CoreModule } from '@core/core.module';
+import { LayoutModule } from '@layout/layout.module';
 
 // components
 import { AppComponent } from './app.component';

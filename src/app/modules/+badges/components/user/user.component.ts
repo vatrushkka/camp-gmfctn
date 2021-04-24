@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { user } from 'src/app/shared/data/user-data';
+import { user } from '@shared/data/user-data';
 import { MatDialog } from '@angular/material/dialog';
-import { ProfileEditModalComponent } from 'src/app/shared/modals/modules/profile-edit-modal/profile-edit-modal.component';
+import { ProfileEditModalComponent } from '@shared/modals/modules/profile-edit-modal/profile-edit-modal.component';
 
 @Component({
   selector: 'app-user',
