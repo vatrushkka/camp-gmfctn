@@ -1,2 +1,15 @@
 @import 'src/app/core/styles/colors';
 @import '../../styles/modals-styles';
+
+.dialog-content {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: #1ddbdb;
+
+  //.header {
+  //  position: absolute;
+  //  color: #38c215;
+  //  top: -30px;
+  //}
+}
