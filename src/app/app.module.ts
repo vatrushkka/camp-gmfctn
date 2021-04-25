@@ -5,10 +5,12 @@ import { LayoutModule } from '@layout/layout.module';
 
 // components
 import { AppComponent } from './app.component';
+import { AuthComponent } from './modules/+auth/auth.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AuthComponent
   ],
   imports: [
     CoreModule,
