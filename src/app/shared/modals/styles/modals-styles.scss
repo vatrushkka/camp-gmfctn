@@ -25,6 +25,18 @@
   outline: none;
 }
 
+.dialog-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  //background-color: ;
+  outline: none;
+}
+
 .bottom-button {
   position: absolute;
   bottom: -24px;
