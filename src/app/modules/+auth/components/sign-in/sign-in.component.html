@@ -1,1 +1,29 @@
-<p>sign-in works!</p>
+<div class="form-content">
+  <div class="line"></div>
+
+  <form [formGroup]="inputForm">
+    <div class="form-input">
+      <label class="text-uppercase">username</label>
+
+      <input
+        formControlName="username"
+        type="text">
+    </div>
+
+    <div class="form-input">
+      <label class="text-uppercase">password</label>
+
+      <input
+        formControlName="password"
+        type="password">
+    </div>
+  </form>
+
+  <a href="" class="text-uppercase">forgot password?</a>
+
+  <button
+    class="text-uppercase"
+    [disabled]="!inputForm.valid">
+    sign in
+  </button>
+</div>
