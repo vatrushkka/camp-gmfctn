@@ -1,7 +1,7 @@
 <div class="form-content">
   <div class="line"></div>
 
-  <form [formGroup]="inputForm">
+  <form [formGroup]="signInForm">
     <div class="form-input">
       <label class="text-uppercase">username</label>
 
@@ -23,7 +23,7 @@
 
   <button
     class="text-uppercase"
-    [disabled]="!inputForm.valid">
+    [disabled]="!signInForm.valid">
     sign in
   </button>
 </div>
