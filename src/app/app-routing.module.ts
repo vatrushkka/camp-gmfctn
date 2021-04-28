@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthComponent } from "@app/modules/+auth/auth.component";
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'sign-in',
     pathMatch: 'full'
   },
   {
@@ -14,6 +15,10 @@ const routes: Routes = [
   {
     path: 'badges',
     loadChildren: () => import('./modules/+badges/badges.module').then(module => module.BadgesModule)
+  },
+  {
+    path: 'sign-in',
+    component: AuthComponent
   }
 ];
 

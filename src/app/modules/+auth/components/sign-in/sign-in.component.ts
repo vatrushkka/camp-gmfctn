@@ -19,7 +19,7 @@ export class SignInComponent {
               private router: Router) { }
 
   onSubmit(): void {
-    this.authUserService.authenticate(this.signInForm.value)
+    this.authUserService.authenticate(this.signInForm.value.username, this.signInForm.value.password)
       .subscribe(() => {
         this.router.navigate(['/dashboard']);
       });

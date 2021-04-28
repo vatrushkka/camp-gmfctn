@@ -9,11 +9,11 @@ import {AuthComponent} from "@app/modules/+auth/auth.component";
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
-    RouterModule.forChild([{
-      path: '',
-      component: AuthComponent
-    }])
+    CommonModule
+    // RouterModule.forChild([{
+    //   path: '',
+    //   component: AuthComponent
+    // }])
   ]
 })
 export class AuthRoutingModule { }

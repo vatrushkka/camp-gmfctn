@@ -19,11 +19,6 @@ export class SignInService {
   constructor(private httpClient: HttpClient) { }
 
   authenticate(userName: string, password: string): Observable<User> {
-    const loginData = {
-      userName,
-      password
-    }
-    debugger
     return this.httpClient.post<User>(`${this.apiUrl}authenticate`, {
       userName,
       password
@@ -31,32 +26,32 @@ export class SignInService {
       .pipe(
         tap(user => {
           this.user$.next(user);
-          // this.storeTokens(user.token, user.refreshToken);
+          this.storeTokens(user.token, user.refreshToken);
         })
       );
   }
 
-  // refreshToken(): Observable<User> {
-  //   return this.httpClient.post<User>(`${this.apiUrl}authenticate/refresh`, {
-  //     'refreshToken': localStorage.getItem('refresh_token')
-  //   })
-  //     .pipe(
-  //       switchMap(user => {
-  //         this.user$.next(user);
-  //         this.storeTokens(user.token, user.refreshToken);
-  //
-  //         return of(user);
-  //       })
-  //     );
-  // }
+  refreshToken(): Observable<User> {
+    return this.httpClient.post<User>(`${this.apiUrl}authenticate/refresh`, {
+      'refreshToken': localStorage.getItem('refresh_token')
+    })
+      .pipe(
+        switchMap(user => {
+          this.user$.next(user);
+          this.storeTokens(user.token, user.refreshToken);
 
-  // storeTokens(token: string, refreshToken: string): void {
-  //   localStorage.setItem('token', token);
-  //   localStorage.setItem('refresh_token', refreshToken);
-  // }
-  //
-  // clearTokens(): void {
-  //   localStorage.removeItem('token');
-  //   localStorage.removeItem('refresh_token');
-  // }
+          return of(user);
+        })
+      );
+  }
+
+  storeTokens(token: string, refreshToken: string): void {
+    localStorage.setItem('token', token);
+    localStorage.setItem('refresh_token', refreshToken);
+  }
+
+  clearTokens(): void {
+    localStorage.removeItem('token');
+    localStorage.removeItem('refresh_token');
+  }
 }

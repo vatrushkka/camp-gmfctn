@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@shared/modules/material/material.module';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { ThankYouModule } from '@shared/modules/thank-you.module';
-import { DatePipeModule } from '@core/pipes/date-pipe/date-pipe.module';
+import { DatePipeModule } from '@shared/pipes/date-pipe/date-pipe.module';
 import { AchievementAssignModalModule } from '@shared/modals/modules/achievement-assign-modal/achievement-assign-modal.module';
 
 // components
