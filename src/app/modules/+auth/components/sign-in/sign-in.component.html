@@ -23,7 +23,8 @@
 
   <button
     class="text-uppercase"
-    [disabled]="!signInForm.valid">
+    [disabled]="!signInForm.valid"
+    (click)="onSubmit()">
     sign in
   </button>
 </div>

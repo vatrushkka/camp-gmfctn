@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import  { FormGroup, FormControl, Validators } from "@angular/forms";
+import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { SignInService } from "@app/modules/+auth/services/sign-in.service";
+
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-sign-in',
@@ -12,5 +15,13 @@ export class SignInComponent {
     password: new FormControl('', Validators.required)
   });
 
+  constructor(private authUserService: SignInService,
+              private router: Router) { }
 
+  onSubmit(): void {
+    this.authUserService.authenticate(this.signInForm.value)
+      .subscribe(() => {
+        this.router.navigate(['/dashboard']);
+      });
+  }
 }
