@@ -6,10 +6,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 //components
 import { SignInComponent } from "./components/sign-in/sign-in.component";
+import { AuthComponent }  from "@app/modules/+auth/auth.component";
 
 @NgModule({
   declarations: [
-    SignInComponent
+    SignInComponent,
+    AuthComponent
   ],
   exports: [
     SignInComponent

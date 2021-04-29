@@ -7,12 +7,10 @@ import { AuthModule } from "@app/modules/+auth/auth.module";
 
 // components
 import { AppComponent } from './app.component';
-import { AuthComponent } from './modules/+auth/auth.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AuthComponent
+    AppComponent
   ],
   imports: [
     CoreModule,
