@@ -3,6 +3,7 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+
 .mat-sidenav-container {
   height: 100%;
   background-color: $dark;
@@ -42,6 +43,7 @@
     .sidebar {
       display: flex;
       align-items: center;
+      width: 15%;
 
       p {
         margin: 0;
