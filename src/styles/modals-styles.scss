@@ -1,4 +1,5 @@
-@import 'src/styles/colors';
+@import 'colors';
+
 // text
 .text-uppercase {
   text-transform: uppercase;
@@ -32,7 +33,6 @@
   height: 30px;
   border: none;
   border-radius: 50%;
-  //background-color: ;
   outline: none;
 }
 

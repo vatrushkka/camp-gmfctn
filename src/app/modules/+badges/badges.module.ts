@@ -16,11 +16,11 @@ import { BadgesComponent } from './badges.component';
 
 @NgModule({
   declarations: [
-    BadgesComponent,
     LastAchievementsComponent,
     TotalAchievementsComponent,
     UserComponent,
-    AchievementsListComponent
+    AchievementsListComponent,
+    BadgesComponent
   ],
   imports: [
     CommonModule,

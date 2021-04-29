@@ -1,4 +1,5 @@
 @import 'src/styles/colors';
+
 .list-header {
 
   p {
@@ -7,6 +8,7 @@
     letter-spacing: 3px;
   }
 }
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -79,8 +81,6 @@
     }
   }
 }
-
-
 
 .achievements-scroll::-webkit-scrollbar {
   width: 5px;

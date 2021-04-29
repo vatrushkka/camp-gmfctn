@@ -4,7 +4,6 @@ import { BehaviorSubject, Observable, of } from 'rxjs';
 import { tap, switchMap } from 'rxjs/operators';
 
 import { User } from "@shared/models/user.model";
-import { UserCredentials } from "@shared/models/user-credentials.model";
 
 import { environment } from 'src/environments/environment';
 

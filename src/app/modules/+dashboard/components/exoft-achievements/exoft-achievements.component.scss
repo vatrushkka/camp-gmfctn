@@ -1,4 +1,5 @@
 @import 'src/styles/colors';
+
 .achievements {
   display: flex;
   flex-direction: column;
@@ -18,8 +19,7 @@
     }
 
     p {
-      margin: 0;
-      margin-right: 15px;
+      margin: 0 15px 0 0;
     }
 
     button {

@@ -7,25 +7,23 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-// components
-
 @NgModule({
   declarations: [ ],
   imports: [
     CommonModule,
     BrowserModule,
     MaterialModule,
-    BrowserAnimationsModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   exports: [
     CommonModule,
     BrowserModule,
     MaterialModule,
-    BrowserAnimationsModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ]
 })
 export class CoreModule {
