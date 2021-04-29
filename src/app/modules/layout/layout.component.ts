@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { user } from '@shared/data/user-data';
+import { UserInfo } from '@shared/data/user-data';
 import { MatDialog } from '@angular/material/dialog';
 import { ProfileEditModalComponent } from '@shared/modals/modules/profile-edit-modal/profile-edit-modal.component';
 
@@ -10,8 +10,7 @@ import { ProfileEditModalComponent } from '@shared/modals/modules/profile-edit-m
 })
 export class LayoutComponent {
   opened = false;
-
-  public user = user;
+  public userInfo = UserInfo;
 
   constructor(public dialog: MatDialog) { }
 

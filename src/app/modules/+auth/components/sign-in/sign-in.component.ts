@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
-import { SignInService } from "@app/modules/+auth/services/sign-in.service";
+import { SignInService } from "@app/shared/services/sign-in.service";
 import { Router } from "@angular/router";
 
 @Component({
