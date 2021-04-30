@@ -14,6 +14,7 @@
 .container {
   background-color: $grey;
   padding: 40px 30px;
+  border-radius: 10px;
 }
 
 // buttons
@@ -69,6 +70,7 @@
   font-size: 17px;
   font-weight: 600;
   color: $white;
+  border-radius: 0 0 10px 10px;
 }
 
 .color-green {
