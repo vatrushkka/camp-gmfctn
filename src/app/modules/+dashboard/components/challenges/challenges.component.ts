@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { availableChallenges, endedChallenges } from '../../data/challengesData';
+import { availableChallenges, endedChallenges } from '@dashboard/data/challengesData';
 
 @Component({
   selector: 'app-challenges',

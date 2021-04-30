@@ -1,0 +1,31 @@
+<div class="dialog-container">
+  <button mat-dialog-close class="dialog-close color-white">
+    <mat-icon class="icon-close">close</mat-icon>
+  </button>
+
+  <div class="user-content">
+    <div class="user">
+      <img src="{{ data.icon }}" alt="">
+
+      <p class="user-name">{{ data.firstName }} {{ data.lastName }}</p>
+
+      <p class="text-uppercase"><span class="green-text text-uppercase">exp:</span> {{ data.xp }}xp</p>
+    </div>
+
+    <div class="user-achievements">
+      <div class="achievement" *ngFor="let item of achievements">
+        <div class="achievement-img-amount">
+          <div class="amount">{{ item.amount }}</div>
+
+          <img src="{{ item.img }}" alt="icon">
+        </div>
+
+        <p class="title">{{ item.title }}</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="bottom-button text-uppercase button-width" (click)="openThanks()">
+    say thanks
+  </button>
+</div>

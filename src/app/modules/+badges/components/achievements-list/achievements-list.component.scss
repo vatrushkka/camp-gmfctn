@@ -1,4 +1,4 @@
-@import 'src/app/core/styles/colors';
+@import 'src/styles/colors';
 
 .list-header {
 
@@ -8,6 +8,7 @@
     letter-spacing: 3px;
   }
 }
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -80,8 +81,6 @@
     }
   }
 }
-
-
 
 .achievements-scroll::-webkit-scrollbar {
   width: 5px;

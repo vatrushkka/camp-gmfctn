@@ -1,1 +1,84 @@
-@import '../../../../core/styles/colors';
+@import 'src/styles/colors';
+
+.green {
+  color: $green;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.flex-column-between-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar {
+  height: 62%;
+
+  .user {
+    width: 55%;
+
+    img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 2px solid $light-grey;
+      margin-bottom: 20px;
+    }
+
+    .user-name {
+      font-size: 23px;
+      font-weight: 500;
+      color: $white;
+    }
+  }
+
+  .buttons {
+    width: 55%;
+    height: 130px;
+
+    button {
+      padding: 10px 0;
+      width:100%;
+      background-color: $green;
+      border: none;
+      border-radius: 5px;
+      color: $white;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+
+  .info {
+    width: 55%;
+    height: 50px;
+
+    p {
+      color: $white;
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+
+  .navigation {
+    width: 55%;
+    height: 65px;
+
+    .router-link {
+      border: none;
+      border-radius: 0;
+      padding: 3px 5px;
+      color: $white;
+      font-size: 20px;
+      background-color: $grey;
+      outline: none;
+    }
+
+    .router-link-active {
+      border-bottom: 2px solid $green;
+    }
+  }
+}

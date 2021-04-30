@@ -1,4 +1,4 @@
-@import 'src/app/core/styles/colors';
+@import 'src/styles/colors';
 
 .achievements {
   display: flex;
@@ -19,8 +19,7 @@
     }
 
     p {
-      margin: 0;
-      margin-right: 15px;
+      margin: 0 15px 0 0;
     }
 
     button {

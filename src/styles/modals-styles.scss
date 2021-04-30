@@ -1,0 +1,82 @@
+@import 'colors';
+
+// text
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.green-text {
+  color: $green;
+}
+
+// container
+
+.container {
+  background-color: $grey;
+  padding: 40px 30px;
+  border-radius: 10px;
+}
+
+// buttons
+.dialog-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+}
+
+.dialog-close-achievement {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+}
+
+.dialog-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+}
+
+.bottom-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  background-color: $green;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: $white;
+  border-radius: 0 0 10px 10px;
+}
+
+.color-green {
+  color: $green;
+}
+
+.color-white {
+  color: $white;
+}

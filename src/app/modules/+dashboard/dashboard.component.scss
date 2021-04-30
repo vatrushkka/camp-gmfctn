@@ -1,8 +1,9 @@
-@import 'src/app/core/styles/colors';
+@import 'src/styles/colors';
 
 .content {
   width: 100vw;
-  height: 92vh;
+  height: 92.3vh;
+  padding-bottom: 10px;
   background-color: $dark;
   display: flex;
 

@@ -1,11 +1,11 @@
 <div class="container">
   <div class="user-header">
-    <button>Edit</button>
+    <button (click)="openEdit()">Edit</button>
   </div>
 
-  <div class="user">
-    <img src="../../../../../assets/img/dashboard-img/cat-cat.jpg" alt="avatar">
+  <div class="user" *ngFor="let item of user">
+    <img src="{{ item.img }}" alt="avatar">
 
-    <p class="user-name">Apple Corporation</p>
+    <p class="user-name">{{ item.firstName }} {{ item.lastName }}</p>
   </div>
 </div>

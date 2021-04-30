@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { achievements } from 'src/app/modules/+dashboard/data/personal-achievements-data';
+import { achievements } from '@dashboard/data/personal-achievements-data';
 
 @Component({
   selector: 'app-achievements-list',

@@ -2,12 +2,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-import { MaterialModule } from '../shared/modules/material/material.module';
+import { MaterialModule } from '@shared/modules/material/material.module';
 import { RouterModule } from '@angular/router';
-import { AppRoutingModule } from '../app-routing.module';
+import { AppRoutingModule } from '@app/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-// components
 
 @NgModule({
   declarations: [ ],
@@ -15,17 +13,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule,
     BrowserModule,
     MaterialModule,
-    BrowserAnimationsModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   exports: [
     CommonModule,
     BrowserModule,
     MaterialModule,
-    BrowserAnimationsModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ]
 })
 export class CoreModule {

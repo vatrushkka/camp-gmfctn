@@ -1,27 +1,52 @@
 <mat-sidenav-container>
   <mat-sidenav class="layout" [(opened)]="opened">
     <div class="sidenav-header">
+      <div id="empty"></div>
+
       <p class="text-uppercase">gmfctn!</p>
 
-      <button mat-icon-button aria-label="Close sidebar" (click)="opened=!opened">
+      <button mat-icon-button aria-label="Close sidenav" (click)="opened=!opened">
         <mat-icon>menu</mat-icon>
       </button>
-      <app-sidebar></app-sidebar>
     </div>
+    <app-sidebar></app-sidebar>
   </mat-sidenav>
+
   <mat-sidenav-content>
     <mat-toolbar>
       <div class="sidebar">
-        <a mat-icon-button aria-label="Show sidebar" (click)="opened=!opened">
+        <a mat-icon-button aria-label="Open sidenav" (click)="opened=!opened">
           <mat-icon>menu</mat-icon>
         </a>
+
         <p class="text-uppercase">gmfctn</p>
       </div>
+
       <app-header></app-header>
-      <div class="user">
-        user
+
+      <div class="user" *ngFor="let item of userInfo">
+        <img src="{{ item.img }}" alt="avatar">
+
+        <p class="user-name">{{ item.firstName }} {{ item.lastName }}</p>
+
+        <button
+          mat-icon-button
+          aria-label="Close sidenav"
+          [matMenuTriggerFor]="menu">
+          <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+
+        <mat-menu #menu="matMenu" class="mat-menu">
+          <button mat-menu-item (click)="openEdit()">Edit profile</button>
+
+          <button mat-menu-item>Change password</button>
+
+          <button mat-menu-item>Log out</button>
+        </mat-menu>
       </div>
     </mat-toolbar>
+
     <router-outlet></router-outlet>
+
   </mat-sidenav-content>
 </mat-sidenav-container>

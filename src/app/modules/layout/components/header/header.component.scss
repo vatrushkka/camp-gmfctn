@@ -1,7 +1,9 @@
-@import '../../../../core/styles/colors';
+@import 'src/styles/colors';
 
 .navigation {
+  width: 30%;
   display: flex;
+  justify-content: space-between;
 
   .router-link-active {
     color: $green;

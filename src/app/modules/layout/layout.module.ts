@@ -1,8 +1,9 @@
 // modules
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MaterialModule } from '../../shared/modules/material/material.module';
-import { AppRoutingModule } from '../../app-routing.module';
+import { MaterialModule } from '@shared/modules/material/material.module';
+import { AppRoutingModule } from '@app/app-routing.module';
+import { ProfileEditModalModule } from "@shared/modals/modules/profile-edit-modal/profile-edit-modal.module";
 
 // components
 import { HeaderComponent } from './components/header/header.component';
@@ -21,7 +22,8 @@ import { LayoutComponent } from './layout.component';
   imports: [
     CommonModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ProfileEditModalModule
   ]
 })
 export class LayoutModule { }

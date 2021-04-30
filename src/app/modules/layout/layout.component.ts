@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { UserInfo } from '@shared/data/user-data';
+import { MatDialog } from '@angular/material/dialog';
+import { ProfileEditModalComponent } from '@shared/modals/modules/profile-edit-modal/profile-edit-modal.component';
 
 @Component({
   selector: 'app-layout',
@@ -6,5 +9,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./layout.component.scss']
 })
 export class LayoutComponent {
-  public opened = false;
+  opened = false;
+  public userInfo = UserInfo;
+
+  constructor(public dialog: MatDialog) { }
+
+  openEdit(): void {
+    this.dialog.open(ProfileEditModalComponent);
+  }
 }

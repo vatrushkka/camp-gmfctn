@@ -1,0 +1,34 @@
+<div class="dialog-container">
+  <div class="container">
+    <button mat-dialog-close class="dialog-close-achievement color-green">
+      <mat-icon class="icon-close">close</mat-icon>
+    </button>
+
+    <p mat-dialog-title>Please, leave a message and your achievement will be assigned soon</p>
+
+    <div mat-dialog-content class="dialog-content">
+      <div class="form-container">
+        <form [formGroup]="inputForm">
+          <select formControlName="achievement">
+            <option selected hidden>Achievements</option>
+
+            <option *ngFor="let achievement of achievements">
+              {{ achievement.title }}
+            </option>
+          </select>
+
+          <label>Your message</label>
+
+          <textarea formControlName="message"></textarea>
+
+          <button
+            mat-dialog-close
+            (click)="submit()"
+            [disabled]="!inputForm.valid">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

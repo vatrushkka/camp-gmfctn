@@ -1,6 +1,7 @@
 <div class="container">
   <div class="header">
     <p class="text-uppercase">challenges</p>
+
     <button>Show more</button>
   </div>
 
@@ -18,6 +19,7 @@
 
           <div class="complete-remaining">
             <p class="green">{{ item.progress }}% of {{ item.total }} complete</p>
+
             <p>{{ item.remTime }} Remaining</p>
           </div>
         </div>
@@ -34,6 +36,7 @@
           <div *ngFor='let item of ended' class="ended-content">
             <div class="end">
               <p class="name">{{ item.challengeName }}</p>
+
               <img alt="icon" src="{{ item.img }}">
             </div>
           </div>

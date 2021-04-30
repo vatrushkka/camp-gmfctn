@@ -1,0 +1,26 @@
+<div class="dialog-container">
+  <div class="container">
+    <button mat-dialog-close class="dialog-close color-white">
+      <mat-icon class="icon-close">close</mat-icon>
+    </button>
+
+    <p class="comment">Leave the comment</p>
+
+    <form [formGroup]="inputForm">
+    <textarea
+      class="thanks-message"
+      formControlName="message"
+    ></textarea>
+    </form>
+
+    <button
+      mat-dialog-close
+      class="
+      bottom-button
+      text-uppercase
+      button-width"
+      [disabled]="!inputForm.valid">
+      Thanks!
+    </button>
+  </div>
+</div>
