@@ -6,23 +6,25 @@ import { AuthComponent } from "@app/modules/+auth/auth.component";
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'sign-in',
+    // redirectTo: 'sign-in',
+    redirectTo: 'badges',
+    // redirectTo: 'dashboard',
     pathMatch: 'full'
   },
   {
     path: 'dashboard',
     loadChildren: () => import('./modules/+dashboard/dashboard.module').then(module => module.DashboardModule),
-    canActivate: [AuthGuard]
+    // canActivate: [AuthGuard]
   },
   {
     path: 'badges',
     loadChildren: () => import('./modules/+badges/badges.module').then(module => module.BadgesModule),
-    canActivate: [AuthGuard]
+    // canActivate: [AuthGuard]
   },
-  {
-    path: 'sign-in',
-    component: AuthComponent
-  }
+  // {
+  //   path: 'sign-in',
+  //   component: AuthComponent
+  // }
 ];
 
 @NgModule({

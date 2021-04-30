@@ -1,16 +1,25 @@
 @import 'colors';
 
 .mat-dialog-container {
-  background-color: $grey;
+  background-color: transparent;
+  box-shadow: none;
   color: $white;
 }
 
 .mat-menu {
   width: 250px;
-  background-color: $grey;
+  background-color: transparent;
 
   button {
     color: $white;
     font-size: 17px;
+
+    mat-icon {
+      background-color: transparent;
+    }
   }
+}
+
+.cdk-overlay-dark-backdrop {
+  background: rgba(0,0,0,.6);
 }

@@ -4,6 +4,8 @@
 .dialog-container {
   position: relative;
   color: $white;
+  background-color: $grey;
+  padding: 40px 30px;
 
   .user-content {
     display: flex;
@@ -71,6 +73,6 @@
   }
 
   .button-width {
-    width: 928px;
+    width: 100%;
   }
 }
