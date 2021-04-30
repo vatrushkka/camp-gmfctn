@@ -1,18 +1,36 @@
 <div class="dialog-content">
-  <div class="header">
-    <div class="header-text">
-      <button mat-dialog-close class="dialog-arrow color-white">
-        <mat-icon class="icon-close">arrow_back</mat-icon>
-      </button>
+  <div class="container margin">
+    <div class="header-content">
+      <div class="header-text">
+        <button mat-dialog-close class="dialog-arrow color-white background">
+          <mat-icon class="icon-close background">arrow_back</mat-icon>
+        </button>
 
-      <p>Profile settings</p>
+        <p>Profile settings</p>
+      </div>
+
+      <img src="../../../../../assets/img/dashboard-img/cat-cat.jpg" alt="avatar">
     </div>
 
-    <img src="" alt="">
-  </div>
+    <form [formGroup]="inputForm" class="width-100">
+      <div class="name width-100">
+        <div class="name-input">
+          <label class="text-uppercase">first name</label>
 
+          <input type="text" formControlName="firstName" class="width-100">
+        </div>
 
-  <div class="container">
+        <div class="name-input">
+          <label class="text-uppercase">last name</label>
 
+          <input type="text" formControlName="lastName" class="width-100">
+        </div>
+      </div>
+      <label class="text-uppercase">eMail</label>
+      <input type="text" formControlName="eMail" class="width-100">
+
+      <label class="text-uppercase">status</label>
+      <input type="text" formControlName="status" class="width-100">
+    </form>
   </div>
 </div>

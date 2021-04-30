@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-profile-edit-modal',
@@ -7,16 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./profile-edit-modal.component.scss']
 })
 export class ProfileEditModalComponent {
-  // inputForm = new FormGroup({
-  //   firstName: new FormControl('', Validators.required),
-  //   lastName: new FormControl('', Validators.required),
-  //   eMail: new FormControl('', Validators.required),
-  //   status: new FormControl('', Validators.required)
-  // });
-  //
-  // save(): void {
-  //   if (this.inputForm.valid) {
-  //     alert('Your changes saved');
-  //   }
-  // }
+  inputForm = new FormGroup({
+    firstName: new FormControl('', Validators.required),
+    lastName: new FormControl('', Validators.required),
+    eMail: new FormControl('', Validators.required),
+    status: new FormControl('')
+  });
+
+  save(): void {
+    if (this.inputForm.valid) {
+      alert('Your changes saved');
+    }
+  }
 }
